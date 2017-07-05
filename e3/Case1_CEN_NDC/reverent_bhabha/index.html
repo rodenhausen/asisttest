@@ -1,0 +1,3945 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title id="title">
+Tap: reverent_bhabha
+  </title>
+  <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet"/>
+  <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+  <script charset="utf-8" src="https://d3js.org/d3.v3.min.js">
+  </script>
+  <script id="dataAdjacency" type="text/json">
+   {"directed": true, "graph": {}, "nodes": [{"group": "NDC", "id": "NDC.ID"}, {"group": "NDC", "id": "NDC.IA"}, {"group": "NDC", "id": "NDC.AZ"}, {"group": "CEN", "id": "CEN.AR"}, {"group": "NDC", "id": "NDC.IL"}, {"group": "NDC", "id": "NDC.IN"}, {"group": "NDC", "id": "NDC.AR"}, {"group": "CEN", "id": "CEN.AZ"}, {"group": "NDC", "id": "NDC.AL"}, {"group": "CEN", "id": "CEN.AL"}, {"group": "CEN", "id": "CEN.NY"}, {"group": "NDC", "id": "NDC.West"}, {"group": "CEN", "id": "CEN.IN"}, {"group": "CEN", "id": "CEN.RI"}, {"group": "NDC", "id": "NDC.PA"}, {"group": "CEN", "id": "CEN.IA"}, {"group": "NDC", "id": "NDC.Southeast"}, {"group": "CEN", "id": "CEN.NV"}, {"group": "NDC", "id": "NDC.VT"}, {"group": "CEN", "id": "CEN.CT"}, {"group": "NDC", "id": "NDC.GA"}, {"group": "CEN", "id": "CEN.CO"}, {"group": "NDC", "id": "NDC.VA"}, {"group": "CEN", "id": "CEN.CA"}, {"group": "NDC", "id": "NDC.NV"}, {"group": "CEN", "id": "CEN.TN"}, {"group": "NDC", "id": "NDC.WY"}, {"group": "NDC", "id": "NDC.NY"}, {"group": "CEN", "id": "CEN.KY"}, {"group": "NDC", "id": "NDC.NE"}, {"group": "NDC", "id": "NDC.ND"}, {"group": "CEN", "id": "CEN.TX"}, {"group": "NDC", "id": "NDC.NC"}, {"group": "CEN", "id": "CEN.Northeast"}, {"group": "NDC", "id": "NDC.NM"}, {"group": "NDC", "id": "NDC.NH"}, {"group": "NDC", "id": "NDC.NJ"}, {"group": "CEN", "id": "CEN.VT"}, {"group": "CEN", "id": "CEN.IL"}, {"group": "NDC", "id": "NDC.WV"}, {"group": "NDC", "id": "NDC.WI"}, {"group": "NDC", "id": "NDC.WA"}, {"group": "CEN", "id": "CEN.South"}, {"group": "NDC", "id": "NDC.OR"}, {"group": "CEN", "id": "CEN.SD"}, {"group": "CEN", "id": "CEN.SC"}, {"group": "CEN", "id": "CEN.ID"}, {"group": "NDC", "id": "NDC.OK"}, {"group": "NDC", "id": "NDC.OH"}, {"group": "CEN", "id": "CEN.Midwest"}, {"group": "CEN", "id": "CEN.MS"}, {"group": "CEN", "id": "CEN.MT"}, {"group": "NDC", "id": "NDC.TN"}, {"group": "CEN", "id": "CEN.MA"}, {"group": "CEN", "id": "CEN.USA"}, {"group": "CEN", "id": "CEN.ME"}, {"group": "CEN", "id": "CEN.VA"}, {"group": "CEN", "id": "CEN.MI"}, {"group": "CEN", "id": "CEN.MO"}, {"group": "NDC", "id": "NDC.TX"}, {"group": "NDC", "id": "NDC.FL"}, {"group": "NDC", "id": "NDC.UT"}, {"group": "NDC", "id": "NDC.KY"}, {"group": "NDC", "id": "NDC.ME"}, {"group": "CEN", "id": "CEN.DC"}, {"group": "CEN", "id": "CEN.DE"}, {"group": "NDC", "id": "NDC.USA"}, {"group": "NDC", "id": "NDC.MS"}, {"group": "NDC", "id": "NDC.MT"}, {"group": "CEN", "id": "CEN.MD"}, {"group": "NDC", "id": "NDC.MA"}, {"group": "CEN", "id": "CEN.LA"}, {"group": "NDC", "id": "NDC.MD"}, {"group": "NDC", "id": "NDC.LA"}, {"group": "NDC", "id": "NDC.MI"}, {"group": "CEN", "id": "CEN.MN"}, {"group": "CEN", "id": "CEN.UT"}, {"group": "NDC", "id": "NDC.MN"}, {"group": "NDC", "id": "NDC.MO"}, {"group": "NDC", "id": "NDC.CT"}, {"group": "NDC", "id": "NDC.CA"}, {"group": "NDC", "id": "NDC.CO"}, {"group": "NDC", "id": "NDC.Midwest"}, {"group": "CEN", "id": "CEN.GA"}, {"group": "CEN", "id": "CEN.PA"}, {"group": "NDC", "id": "NDC.RI"}, {"group": "CEN", "id": "CEN.OR"}, {"group": "CEN", "id": "CEN.OK"}, {"group": "CEN", "id": "CEN.OH"}, {"group": "CEN", "id": "CEN.West"}, {"group": "NDC", "id": "NDC.DE"}, {"group": "NDC", "id": "NDC.DC"}, {"group": "CEN", "id": "CEN.KS"}, {"group": "NDC", "id": "NDC.Northeast"}, {"group": "NDC", "id": "NDC.SC"}, {"group": "NDC", "id": "NDC.Southwest"}, {"group": "CEN", "id": "CEN.WV"}, {"group": "NDC", "id": "NDC.SD"}, {"group": "CEN", "id": "CEN.FL"}, {"group": "NDC", "id": "NDC.KS"}, {"group": "CEN", "id": "CEN.WY"}, {"group": "CEN", "id": "CEN.NM"}, {"group": "CEN", "id": "CEN.WA"}, {"group": "CEN", "id": "CEN.NH"}, {"group": "CEN", "id": "CEN.NJ"}, {"group": "CEN", "id": "CEN.ND"}, {"group": "CEN", "id": "CEN.NE"}, {"group": "CEN", "id": "CEN.WI"}, {"group": "CEN", "id": "CEN.NC"}], "links": [{"source": 0, "relation": "taxonomy_incoming.NDC", "target": 11, "key": 0}, {"source": 0, "relation": "equals", "target": 46, "key": 0}, {"source": 1, "relation": "equals", "target": 15, "key": 0}, {"source": 1, "relation": "taxonomy_incoming.NDC", "target": 82, "key": 0}, {"source": 2, "relation": "taxonomy_incoming.NDC", "target": 95, "key": 0}, {"source": 2, "relation": "equals", "target": 7, "key": 0}, {"source": 3, "relation": "taxonomy_incoming.CEN", "target": 42, "key": 0}, {"source": 3, "relation": "equals", "target": 6, "key": 0}, {"source": 4, "relation": "equals", "target": 38, "key": 0}, {"source": 4, "relation": "taxonomy_incoming.NDC", "target": 82, "key": 0}, {"source": 5, "relation": "equals", "target": 12, "key": 0}, {"source": 5, "relation": "taxonomy_incoming.NDC", "target": 82, "key": 0}, {"source": 6, "relation": "taxonomy_incoming.NDC", "target": 16, "key": 0}, {"source": 6, "relation": "equals", "target": 3, "key": 0}, {"source": 7, "relation": "taxonomy_incoming.CEN", "target": 89, "key": 0}, {"source": 7, "relation": "equals", "target": 2, "key": 0}, {"source": 8, "relation": "equals", "target": 9, "key": 0}, {"source": 8, "relation": "taxonomy_incoming.NDC", "target": 16, "key": 0}, {"source": 9, "relation": "equals", "target": 8, "key": 0}, {"source": 9, "relation": "taxonomy_incoming.CEN", "target": 42, "key": 0}, {"source": 10, "relation": "equals", "target": 27, "key": 0}, {"source": 10, "relation": "taxonomy_incoming.CEN", "target": 33, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.NDC", "target": 0, "key": 0}, {"source": 11, "relation": "taxonomy_incoming.NDC", "target": 66, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.NDC", "target": 24, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.NDC", "target": 43, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.NDC", "target": 26, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.NDC", "target": 61, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.NDC", "target": 80, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.NDC", "target": 68, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.NDC", "target": 81, "key": 0}, {"source": 11, "relation": "taxonomy_outgoing.NDC", "target": 41, "key": 0}, {"source": 12, "relation": "taxonomy_incoming.CEN", "target": 49, "key": 0}, {"source": 12, "relation": "equals", "target": 5, "key": 0}, {"source": 13, "relation": "equals", "target": 85, "key": 0}, {"source": 13, "relation": "taxonomy_incoming.CEN", "target": 33, "key": 0}, {"source": 14, "relation": "taxonomy_incoming.NDC", "target": 93, "key": 0}, {"source": 14, "relation": "equals", "target": 84, "key": 0}, {"source": 15, "relation": "taxonomy_incoming.CEN", "target": 49, "key": 0}, {"source": 15, "relation": "equals", "target": 1, "key": 0}, {"source": 16, "relation": "taxonomy_outgoing.NDC", "target": 60, "key": 0}, {"source": 16, "relation": "taxonomy_incoming.NDC", "target": 66, "key": 0}, {"source": 16, "relation": "taxonomy_outgoing.NDC", "target": 67, "key": 0}, {"source": 16, "relation": "taxonomy_outgoing.NDC", "target": 94, "key": 0}, {"source": 16, "relation": "taxonomy_outgoing.NDC", "target": 39, "key": 0}, {"source": 16, "relation": "taxonomy_outgoing.NDC", "target": 52, "key": 0}, {"source": 16, "relation": "taxonomy_outgoing.NDC", "target": 6, "key": 0}, {"source": 16, "relation": "taxonomy_outgoing.NDC", "target": 20, "key": 0}, {"source": 16, "relation": "taxonomy_outgoing.NDC", "target": 8, "key": 0}, {"source": 16, "relation": "taxonomy_outgoing.NDC", "target": 62, "key": 0}, {"source": 16, "relation": "taxonomy_outgoing.NDC", "target": 32, "key": 0}, {"source": 16, "relation": "taxonomy_outgoing.NDC", "target": 22, "key": 0}, {"source": 16, "relation": "taxonomy_outgoing.NDC", "target": 73, "key": 0}, {"source": 17, "relation": "equals", "target": 24, "key": 0}, {"source": 17, "relation": "taxonomy_incoming.CEN", "target": 89, "key": 0}, {"source": 18, "relation": "taxonomy_incoming.NDC", "target": 93, "key": 0}, {"source": 18, "relation": "equals", "target": 37, "key": 0}, {"source": 19, "relation": "equals", "target": 79, "key": 0}, {"source": 19, "relation": "taxonomy_incoming.CEN", "target": 33, "key": 0}, {"source": 20, "relation": "taxonomy_incoming.NDC", "target": 16, "key": 0}, {"source": 20, "relation": "equals", "target": 83, "key": 0}, {"source": 21, "relation": "taxonomy_incoming.CEN", "target": 89, "key": 0}, {"source": 21, "relation": "equals", "target": 81, "key": 0}, {"source": 22, "relation": "taxonomy_incoming.NDC", "target": 16, "key": 0}, {"source": 22, "relation": "equals", "target": 56, "key": 0}, {"source": 23, "relation": "equals", "target": 80, "key": 0}, {"source": 23, "relation": "taxonomy_incoming.CEN", "target": 89, "key": 0}, {"source": 24, "relation": "taxonomy_incoming.NDC", "target": 11, "key": 0}, {"source": 24, "relation": "equals", "target": 17, "key": 0}, {"source": 25, "relation": "equals", "target": 52, "key": 0}, {"source": 25, "relation": "taxonomy_incoming.CEN", "target": 42, "key": 0}, {"source": 26, "relation": "taxonomy_incoming.NDC", "target": 11, "key": 0}, {"source": 26, "relation": "equals", "target": 100, "key": 0}, {"source": 27, "relation": "taxonomy_incoming.NDC", "target": 93, "key": 0}, {"source": 27, "relation": "equals", "target": 10, "key": 0}, {"source": 28, "relation": "taxonomy_incoming.CEN", "target": 42, "key": 0}, {"source": 28, "relation": "equals", "target": 62, "key": 0}, {"source": 29, "relation": "equals", "target": 106, "key": 0}, {"source": 29, "relation": "taxonomy_incoming.NDC", "target": 82, "key": 0}, {"source": 30, "relation": "equals", "target": 105, "key": 0}, {"source": 30, "relation": "taxonomy_incoming.NDC", "target": 82, "key": 0}, {"source": 31, "relation": "taxonomy_incoming.CEN", "target": 42, "key": 0}, {"source": 31, "relation": "equals", "target": 59, "key": 0}, {"source": 32, "relation": "taxonomy_incoming.NDC", "target": 16, "key": 0}, {"source": 32, "relation": "equals", "target": 108, "key": 0}, {"source": 33, "relation": "taxonomy_outgoing.CEN", "target": 37, "key": 0}, {"source": 33, "relation": "taxonomy_outgoing.CEN", "target": 10, "key": 0}, {"source": 33, "relation": "taxonomy_outgoing.CEN", "target": 84, "key": 0}, {"source": 33, "relation": "taxonomy_outgoing.CEN", "target": 13, "key": 0}, {"source": 33, "relation": "taxonomy_outgoing.CEN", "target": 19, "key": 0}, {"source": 33, "relation": "taxonomy_outgoing.CEN", "target": 53, "key": 0}, {"source": 33, "relation": "taxonomy_incoming.CEN", "target": 54, "key": 0}, {"source": 33, "relation": "taxonomy_outgoing.CEN", "target": 103, "key": 0}, {"source": 33, "relation": "taxonomy_outgoing.CEN", "target": 104, "key": 0}, {"source": 33, "relation": "taxonomy_outgoing.CEN", "target": 55, "key": 0}, {"source": 34, "relation": "taxonomy_incoming.NDC", "target": 95, "key": 0}, {"source": 34, "relation": "equals", "target": 101, "key": 0}, {"source": 35, "relation": "taxonomy_incoming.NDC", "target": 93, "key": 0}, {"source": 35, "relation": "equals", "target": 103, "key": 0}, {"source": 36, "relation": "taxonomy_incoming.NDC", "target": 93, "key": 0}, {"source": 36, "relation": "equals", "target": 104, "key": 0}, {"source": 37, "relation": "equals", "target": 18, "key": 0}, {"source": 37, "relation": "taxonomy_incoming.CEN", "target": 33, "key": 0}, {"source": 38, "relation": "taxonomy_incoming.CEN", "target": 49, "key": 0}, {"source": 38, "relation": "equals", "target": 4, "key": 0}, {"source": 39, "relation": "taxonomy_incoming.NDC", "target": 16, "key": 0}, {"source": 39, "relation": "equals", "target": 96, "key": 0}, {"source": 40, "relation": "equals", "target": 107, "key": 0}, {"source": 40, "relation": "taxonomy_incoming.NDC", "target": 82, "key": 0}, {"source": 41, "relation": "taxonomy_incoming.NDC", "target": 11, "key": 0}, {"source": 41, "relation": "equals", "target": 102, "key": 0}, {"source": 42, "relation": "taxonomy_outgoing.CEN", "target": 83, "key": 0}, {"source": 42, "relation": "taxonomy_outgoing.CEN", "target": 50, "key": 0}, {"source": 42, "relation": "taxonomy_outgoing.CEN", "target": 25, "key": 0}, {"source": 42, "relation": "taxonomy_outgoing.CEN", "target": 96, "key": 0}, {"source": 42, "relation": "taxonomy_outgoing.CEN", "target": 56, "key": 0}, {"source": 42, "relation": "taxonomy_outgoing.CEN", "target": 3, "key": 0}, {"source": 42, "relation": "taxonomy_outgoing.CEN", "target": 98, "key": 0}, {"source": 42, "relation": "taxonomy_outgoing.CEN", "target": 45, "key": 0}, {"source": 42, "relation": "taxonomy_outgoing.CEN", "target": 31, "key": 0}, {"source": 42, "relation": "taxonomy_outgoing.CEN", "target": 28, "key": 0}, {"source": 42, "relation": "taxonomy_outgoing.CEN", "target": 87, "key": 0}, {"source": 42, "relation": "taxonomy_incoming.CEN", "target": 54, "key": 0}, {"source": 42, "relation": "taxonomy_outgoing.CEN", "target": 71, "key": 0}, {"source": 42, "relation": "taxonomy_outgoing.CEN", "target": 69, "key": 0}, {"source": 42, "relation": "taxonomy_outgoing.CEN", "target": 64, "key": 0}, {"source": 42, "relation": "taxonomy_outgoing.CEN", "target": 9, "key": 0}, {"source": 42, "relation": "taxonomy_outgoing.CEN", "target": 65, "key": 0}, {"source": 42, "relation": "taxonomy_outgoing.CEN", "target": 108, "key": 0}, {"source": 43, "relation": "taxonomy_incoming.NDC", "target": 11, "key": 0}, {"source": 43, "relation": "equals", "target": 86, "key": 0}, {"source": 44, "relation": "taxonomy_incoming.CEN", "target": 49, "key": 0}, {"source": 44, "relation": "equals", "target": 97, "key": 0}, {"source": 45, "relation": "equals", "target": 94, "key": 0}, {"source": 45, "relation": "taxonomy_incoming.CEN", "target": 42, "key": 0}, {"source": 46, "relation": "equals", "target": 0, "key": 0}, {"source": 46, "relation": "taxonomy_incoming.CEN", "target": 89, "key": 0}, {"source": 47, "relation": "taxonomy_incoming.NDC", "target": 95, "key": 0}, {"source": 47, "relation": "equals", "target": 87, "key": 0}, {"source": 48, "relation": "equals", "target": 88, "key": 0}, {"source": 48, "relation": "taxonomy_incoming.NDC", "target": 82, "key": 0}, {"source": 49, "relation": "taxonomy_outgoing.CEN", "target": 38, "key": 0}, {"source": 49, "relation": "taxonomy_outgoing.CEN", "target": 12, "key": 0}, {"source": 49, "relation": "taxonomy_outgoing.CEN", "target": 92, "key": 0}, {"source": 49, "relation": "taxonomy_outgoing.CEN", "target": 44, "key": 0}, {"source": 49, "relation": "taxonomy_outgoing.CEN", "target": 15, "key": 0}, {"source": 49, "relation": "taxonomy_outgoing.CEN", "target": 57, "key": 0}, {"source": 49, "relation": "taxonomy_incoming.CEN", "target": 54, "key": 0}, {"source": 49, "relation": "taxonomy_outgoing.CEN", "target": 88, "key": 0}, {"source": 49, "relation": "taxonomy_outgoing.CEN", "target": 105, "key": 0}, {"source": 49, "relation": "taxonomy_outgoing.CEN", "target": 106, "key": 0}, {"source": 49, "relation": "taxonomy_outgoing.CEN", "target": 107, "key": 0}, {"source": 49, "relation": "taxonomy_outgoing.CEN", "target": 58, "key": 0}, {"source": 49, "relation": "taxonomy_outgoing.CEN", "target": 75, "key": 0}, {"source": 50, "relation": "taxonomy_incoming.CEN", "target": 42, "key": 0}, {"source": 50, "relation": "equals", "target": 67, "key": 0}, {"source": 51, "relation": "equals", "target": 68, "key": 0}, {"source": 51, "relation": "taxonomy_incoming.CEN", "target": 89, "key": 0}, {"source": 52, "relation": "taxonomy_incoming.NDC", "target": 16, "key": 0}, {"source": 52, "relation": "equals", "target": 25, "key": 0}, {"source": 53, "relation": "equals", "target": 70, "key": 0}, {"source": 53, "relation": "taxonomy_incoming.CEN", "target": 33, "key": 0}, {"source": 54, "relation": "taxonomy_outgoing.CEN", "target": 49, "key": 0}, {"source": 54, "relation": "taxonomy_outgoing.CEN", "target": 42, "key": 0}, {"source": 54, "relation": "taxonomy_outgoing.CEN", "target": 89, "key": 0}, {"source": 54, "relation": "taxonomy_outgoing.CEN", "target": 33, "key": 0}, {"source": 55, "relation": "equals", "target": 63, "key": 0}, {"source": 55, "relation": "taxonomy_incoming.CEN", "target": 33, "key": 0}, {"source": 56, "relation": "taxonomy_incoming.CEN", "target": 42, "key": 0}, {"source": 56, "relation": "equals", "target": 22, "key": 0}, {"source": 57, "relation": "taxonomy_incoming.CEN", "target": 49, "key": 0}, {"source": 57, "relation": "equals", "target": 74, "key": 0}, {"source": 58, "relation": "taxonomy_incoming.CEN", "target": 49, "key": 0}, {"source": 58, "relation": "equals", "target": 78, "key": 0}, {"source": 59, "relation": "taxonomy_incoming.NDC", "target": 95, "key": 0}, {"source": 59, "relation": "equals", "target": 31, "key": 0}, {"source": 60, "relation": "equals", "target": 98, "key": 0}, {"source": 60, "relation": "taxonomy_incoming.NDC", "target": 16, "key": 0}, {"source": 61, "relation": "taxonomy_incoming.NDC", "target": 11, "key": 0}, {"source": 61, "relation": "equals", "target": 76, "key": 0}, {"source": 62, "relation": "taxonomy_incoming.NDC", "target": 16, "key": 0}, {"source": 62, "relation": "equals", "target": 28, "key": 0}, {"source": 63, "relation": "taxonomy_incoming.NDC", "target": 93, "key": 0}, {"source": 63, "relation": "equals", "target": 55, "key": 0}, {"source": 64, "relation": "taxonomy_incoming.CEN", "target": 42, "key": 0}, {"source": 64, "relation": "equals", "target": 91, "key": 0}, {"source": 65, "relation": "taxonomy_incoming.CEN", "target": 42, "key": 0}, {"source": 65, "relation": "equals", "target": 90, "key": 0}, {"source": 66, "relation": "taxonomy_outgoing.NDC", "target": 11, "key": 0}, {"source": 66, "relation": "taxonomy_outgoing.NDC", "target": 93, "key": 0}, {"source": 66, "relation": "taxonomy_outgoing.NDC", "target": 16, "key": 0}, {"source": 66, "relation": "taxonomy_outgoing.NDC", "target": 95, "key": 0}, {"source": 66, "relation": "taxonomy_outgoing.NDC", "target": 82, "key": 0}, {"source": 67, "relation": "taxonomy_incoming.NDC", "target": 16, "key": 0}, {"source": 67, "relation": "equals", "target": 50, "key": 0}, {"source": 68, "relation": "taxonomy_incoming.NDC", "target": 11, "key": 0}, {"source": 68, "relation": "equals", "target": 51, "key": 0}, {"source": 69, "relation": "taxonomy_incoming.CEN", "target": 42, "key": 0}, {"source": 69, "relation": "equals", "target": 72, "key": 0}, {"source": 70, "relation": "taxonomy_incoming.NDC", "target": 93, "key": 0}, {"source": 70, "relation": "equals", "target": 53, "key": 0}, {"source": 71, "relation": "taxonomy_incoming.CEN", "target": 42, "key": 0}, {"source": 71, "relation": "equals", "target": 73, "key": 0}, {"source": 72, "relation": "taxonomy_incoming.NDC", "target": 93, "key": 0}, {"source": 72, "relation": "equals", "target": 69, "key": 0}, {"source": 73, "relation": "taxonomy_incoming.NDC", "target": 16, "key": 0}, {"source": 73, "relation": "equals", "target": 71, "key": 0}, {"source": 74, "relation": "equals", "target": 57, "key": 0}, {"source": 74, "relation": "taxonomy_incoming.NDC", "target": 82, "key": 0}, {"source": 75, "relation": "taxonomy_incoming.CEN", "target": 49, "key": 0}, {"source": 75, "relation": "equals", "target": 77, "key": 0}, {"source": 76, "relation": "equals", "target": 61, "key": 0}, {"source": 76, "relation": "taxonomy_incoming.CEN", "target": 89, "key": 0}, {"source": 77, "relation": "equals", "target": 75, "key": 0}, {"source": 77, "relation": "taxonomy_incoming.NDC", "target": 82, "key": 0}, {"source": 78, "relation": "equals", "target": 58, "key": 0}, {"source": 78, "relation": "taxonomy_incoming.NDC", "target": 82, "key": 0}, {"source": 79, "relation": "taxonomy_incoming.NDC", "target": 93, "key": 0}, {"source": 79, "relation": "equals", "target": 19, "key": 0}, {"source": 80, "relation": "taxonomy_incoming.NDC", "target": 11, "key": 0}, {"source": 80, "relation": "equals", "target": 23, "key": 0}, {"source": 81, "relation": "taxonomy_incoming.NDC", "target": 11, "key": 0}, {"source": 81, "relation": "equals", "target": 21, "key": 0}, {"source": 82, "relation": "taxonomy_incoming.NDC", "target": 66, "key": 0}, {"source": 82, "relation": "taxonomy_outgoing.NDC", "target": 1, "key": 0}, {"source": 82, "relation": "taxonomy_outgoing.NDC", "target": 97, "key": 0}, {"source": 82, "relation": "taxonomy_outgoing.NDC", "target": 4, "key": 0}, {"source": 82, "relation": "taxonomy_outgoing.NDC", "target": 99, "key": 0}, {"source": 82, "relation": "taxonomy_outgoing.NDC", "target": 5, "key": 0}, {"source": 82, "relation": "taxonomy_outgoing.NDC", "target": 29, "key": 0}, {"source": 82, "relation": "taxonomy_outgoing.NDC", "target": 30, "key": 0}, {"source": 82, "relation": "taxonomy_outgoing.NDC", "target": 48, "key": 0}, {"source": 82, "relation": "taxonomy_outgoing.NDC", "target": 40, "key": 0}, {"source": 82, "relation": "taxonomy_outgoing.NDC", "target": 74, "key": 0}, {"source": 82, "relation": "taxonomy_outgoing.NDC", "target": 77, "key": 0}, {"source": 82, "relation": "taxonomy_outgoing.NDC", "target": 78, "key": 0}, {"source": 83, "relation": "taxonomy_incoming.CEN", "target": 42, "key": 0}, {"source": 83, "relation": "equals", "target": 20, "key": 0}, {"source": 84, "relation": "equals", "target": 14, "key": 0}, {"source": 84, "relation": "taxonomy_incoming.CEN", "target": 33, "key": 0}, {"source": 85, "relation": "taxonomy_incoming.NDC", "target": 93, "key": 0}, {"source": 85, "relation": "equals", "target": 13, "key": 0}, {"source": 86, "relation": "equals", "target": 43, "key": 0}, {"source": 86, "relation": "taxonomy_incoming.CEN", "target": 89, "key": 0}, {"source": 87, "relation": "taxonomy_incoming.CEN", "target": 42, "key": 0}, {"source": 87, "relation": "equals", "target": 47, "key": 0}, {"source": 88, "relation": "taxonomy_incoming.CEN", "target": 49, "key": 0}, {"source": 88, "relation": "equals", "target": 48, "key": 0}, {"source": 89, "relation": "taxonomy_outgoing.CEN", "target": 51, "key": 0}, {"source": 89, "relation": "taxonomy_outgoing.CEN", "target": 86, "key": 0}, {"source": 89, "relation": "taxonomy_outgoing.CEN", "target": 100, "key": 0}, {"source": 89, "relation": "taxonomy_outgoing.CEN", "target": 102, "key": 0}, {"source": 89, "relation": "taxonomy_outgoing.CEN", "target": 7, "key": 0}, {"source": 89, "relation": "taxonomy_outgoing.CEN", "target": 21, "key": 0}, {"source": 89, "relation": "taxonomy_outgoing.CEN", "target": 101, "key": 0}, {"source": 89, "relation": "taxonomy_incoming.CEN", "target": 54, "key": 0}, {"source": 89, "relation": "taxonomy_outgoing.CEN", "target": 17, "key": 0}, {"source": 89, "relation": "taxonomy_outgoing.CEN", "target": 46, "key": 0}, {"source": 89, "relation": "taxonomy_outgoing.CEN", "target": 76, "key": 0}, {"source": 89, "relation": "taxonomy_outgoing.CEN", "target": 23, "key": 0}, {"source": 90, "relation": "taxonomy_incoming.NDC", "target": 93, "key": 0}, {"source": 90, "relation": "equals", "target": 65, "key": 0}, {"source": 91, "relation": "taxonomy_incoming.NDC", "target": 93, "key": 0}, {"source": 91, "relation": "equals", "target": 64, "key": 0}, {"source": 92, "relation": "taxonomy_incoming.CEN", "target": 49, "key": 0}, {"source": 92, "relation": "equals", "target": 99, "key": 0}, {"source": 93, "relation": "taxonomy_incoming.NDC", "target": 66, "key": 0}, {"source": 93, "relation": "taxonomy_outgoing.NDC", "target": 79, "key": 0}, {"source": 93, "relation": "taxonomy_outgoing.NDC", "target": 85, "key": 0}, {"source": 93, "relation": "taxonomy_outgoing.NDC", "target": 18, "key": 0}, {"source": 93, "relation": "taxonomy_outgoing.NDC", "target": 14, "key": 0}, {"source": 93, "relation": "taxonomy_outgoing.NDC", "target": 27, "key": 0}, {"source": 93, "relation": "taxonomy_outgoing.NDC", "target": 70, "key": 0}, {"source": 93, "relation": "taxonomy_outgoing.NDC", "target": 90, "key": 0}, {"source": 93, "relation": "taxonomy_outgoing.NDC", "target": 72, "key": 0}, {"source": 93, "relation": "taxonomy_outgoing.NDC", "target": 63, "key": 0}, {"source": 93, "relation": "taxonomy_outgoing.NDC", "target": 91, "key": 0}, {"source": 93, "relation": "taxonomy_outgoing.NDC", "target": 35, "key": 0}, {"source": 93, "relation": "taxonomy_outgoing.NDC", "target": 36, "key": 0}, {"source": 94, "relation": "taxonomy_incoming.NDC", "target": 16, "key": 0}, {"source": 94, "relation": "equals", "target": 45, "key": 0}, {"source": 95, "relation": "taxonomy_outgoing.NDC", "target": 34, "key": 0}, {"source": 95, "relation": "taxonomy_incoming.NDC", "target": 66, "key": 0}, {"source": 95, "relation": "taxonomy_outgoing.NDC", "target": 47, "key": 0}, {"source": 95, "relation": "taxonomy_outgoing.NDC", "target": 2, "key": 0}, {"source": 95, "relation": "taxonomy_outgoing.NDC", "target": 59, "key": 0}, {"source": 96, "relation": "equals", "target": 39, "key": 0}, {"source": 96, "relation": "taxonomy_incoming.CEN", "target": 42, "key": 0}, {"source": 97, "relation": "equals", "target": 44, "key": 0}, {"source": 97, "relation": "taxonomy_incoming.NDC", "target": 82, "key": 0}, {"source": 98, "relation": "equals", "target": 60, "key": 0}, {"source": 98, "relation": "taxonomy_incoming.CEN", "target": 42, "key": 0}, {"source": 99, "relation": "equals", "target": 92, "key": 0}, {"source": 99, "relation": "taxonomy_incoming.NDC", "target": 82, "key": 0}, {"source": 100, "relation": "taxonomy_incoming.CEN", "target": 89, "key": 0}, {"source": 100, "relation": "equals", "target": 26, "key": 0}, {"source": 101, "relation": "equals", "target": 34, "key": 0}, {"source": 101, "relation": "taxonomy_incoming.CEN", "target": 89, "key": 0}, {"source": 102, "relation": "taxonomy_incoming.CEN", "target": 89, "key": 0}, {"source": 102, "relation": "equals", "target": 41, "key": 0}, {"source": 103, "relation": "equals", "target": 35, "key": 0}, {"source": 103, "relation": "taxonomy_incoming.CEN", "target": 33, "key": 0}, {"source": 104, "relation": "equals", "target": 36, "key": 0}, {"source": 104, "relation": "taxonomy_incoming.CEN", "target": 33, "key": 0}, {"source": 105, "relation": "taxonomy_incoming.CEN", "target": 49, "key": 0}, {"source": 105, "relation": "equals", "target": 30, "key": 0}, {"source": 106, "relation": "taxonomy_incoming.CEN", "target": 49, "key": 0}, {"source": 106, "relation": "equals", "target": 29, "key": 0}, {"source": 107, "relation": "taxonomy_incoming.CEN", "target": 49, "key": 0}, {"source": 107, "relation": "equals", "target": 40, "key": 0}, {"source": 108, "relation": "taxonomy_incoming.CEN", "target": 42, "key": 0}, {"source": 108, "relation": "equals", "target": 32, "key": 0}], "multigraph": true}
+  </script>
+  <script id="dataAdjacency1x1" type="text/json">
+   {"directed": true, "graph": {}, "nodes": [{"group": "NDC", "id": "NDC.ID"}, {"group": "NDC", "id": "NDC.IA"}, {"group": "NDC", "id": "NDC.AZ"}, {"group": "CEN", "id": "CEN.AR"}, {"group": "NDC", "id": "NDC.IL"}, {"group": "NDC", "id": "NDC.IN"}, {"group": "NDC", "id": "NDC.AR"}, {"group": "CEN", "id": "CEN.AZ"}, {"group": "NDC", "id": "NDC.AL"}, {"group": "CEN", "id": "CEN.AL"}, {"group": "CEN", "id": "CEN.NY"}, {"group": "NDC", "id": "NDC.West"}, {"group": "CEN", "id": "CEN.IN"}, {"group": "CEN", "id": "CEN.RI"}, {"group": "NDC", "id": "NDC.PA"}, {"group": "CEN", "id": "CEN.IA"}, {"group": "NDC", "id": "NDC.Southeast"}, {"group": "CEN", "id": "CEN.NV"}, {"group": "NDC", "id": "NDC.VT"}, {"group": "CEN", "id": "CEN.CT"}, {"group": "NDC", "id": "NDC.GA"}, {"group": "CEN", "id": "CEN.CO"}, {"group": "NDC", "id": "NDC.VA"}, {"group": "CEN", "id": "CEN.CA"}, {"group": "NDC", "id": "NDC.NV"}, {"group": "CEN", "id": "CEN.TN"}, {"group": "NDC", "id": "NDC.WY"}, {"group": "NDC", "id": "NDC.NY"}, {"group": "CEN", "id": "CEN.KY"}, {"group": "NDC", "id": "NDC.NE"}, {"group": "NDC", "id": "NDC.ND"}, {"group": "CEN", "id": "CEN.TX"}, {"group": "NDC", "id": "NDC.NC"}, {"group": "CEN", "id": "CEN.Northeast"}, {"group": "NDC", "id": "NDC.NM"}, {"group": "NDC", "id": "NDC.NH"}, {"group": "NDC", "id": "NDC.NJ"}, {"group": "CEN", "id": "CEN.VT"}, {"group": "CEN", "id": "CEN.IL"}, {"group": "NDC", "id": "NDC.WV"}, {"group": "NDC", "id": "NDC.WI"}, {"group": "NDC", "id": "NDC.WA"}, {"group": "CEN", "id": "CEN.South"}, {"group": "NDC", "id": "NDC.OR"}, {"group": "CEN", "id": "CEN.SD"}, {"group": "CEN", "id": "CEN.SC"}, {"group": "CEN", "id": "CEN.ID"}, {"group": "NDC", "id": "NDC.OK"}, {"group": "NDC", "id": "NDC.OH"}, {"group": "CEN", "id": "CEN.Midwest"}, {"group": "CEN", "id": "CEN.MS"}, {"group": "CEN", "id": "CEN.MT"}, {"group": "NDC", "id": "NDC.TN"}, {"group": "CEN", "id": "CEN.MA"}, {"group": "CEN", "id": "CEN.USA"}, {"group": "CEN", "id": "CEN.ME"}, {"group": "CEN", "id": "CEN.VA"}, {"group": "CEN", "id": "CEN.MI"}, {"group": "CEN", "id": "CEN.MO"}, {"group": "NDC", "id": "NDC.TX"}, {"group": "NDC", "id": "NDC.FL"}, {"group": "NDC", "id": "NDC.UT"}, {"group": "NDC", "id": "NDC.KY"}, {"group": "NDC", "id": "NDC.ME"}, {"group": "CEN", "id": "CEN.DC"}, {"group": "CEN", "id": "CEN.DE"}, {"group": "NDC", "id": "NDC.USA"}, {"group": "NDC", "id": "NDC.MS"}, {"group": "NDC", "id": "NDC.MT"}, {"group": "CEN", "id": "CEN.MD"}, {"group": "NDC", "id": "NDC.MA"}, {"group": "CEN", "id": "CEN.LA"}, {"group": "NDC", "id": "NDC.MD"}, {"group": "NDC", "id": "NDC.LA"}, {"group": "NDC", "id": "NDC.MI"}, {"group": "CEN", "id": "CEN.MN"}, {"group": "CEN", "id": "CEN.UT"}, {"group": "NDC", "id": "NDC.MN"}, {"group": "NDC", "id": "NDC.MO"}, {"group": "NDC", "id": "NDC.CT"}, {"group": "NDC", "id": "NDC.CA"}, {"group": "NDC", "id": "NDC.CO"}, {"group": "NDC", "id": "NDC.Midwest"}, {"group": "CEN", "id": "CEN.GA"}, {"group": "CEN", "id": "CEN.PA"}, {"group": "NDC", "id": "NDC.RI"}, {"group": "CEN", "id": "CEN.OR"}, {"group": "CEN", "id": "CEN.OK"}, {"group": "CEN", "id": "CEN.OH"}, {"group": "CEN", "id": "CEN.West"}, {"group": "NDC", "id": "NDC.DE"}, {"group": "NDC", "id": "NDC.DC"}, {"group": "CEN", "id": "CEN.KS"}, {"group": "NDC", "id": "NDC.Northeast"}, {"group": "NDC", "id": "NDC.SC"}, {"group": "NDC", "id": "NDC.Southwest"}, {"group": "CEN", "id": "CEN.WV"}, {"group": "NDC", "id": "NDC.SD"}, {"group": "CEN", "id": "CEN.FL"}, {"group": "NDC", "id": "NDC.KS"}, {"group": "CEN", "id": "CEN.WY"}, {"group": "CEN", "id": "CEN.NM"}, {"group": "CEN", "id": "CEN.WA"}, {"group": "CEN", "id": "CEN.NH"}, {"group": "CEN", "id": "CEN.NJ"}, {"group": "CEN", "id": "CEN.ND"}, {"group": "CEN", "id": "CEN.NE"}, {"group": "CEN", "id": "CEN.WI"}, {"group": "CEN", "id": "CEN.NC"}], "links": [{"source": 3, "relation": "equals", "target": 6, "key": 0}, {"source": 7, "relation": "equals", "target": 2, "key": 0}, {"source": 9, "relation": "equals", "target": 8, "key": 0}, {"source": 10, "relation": "equals", "target": 27, "key": 0}, {"source": 12, "relation": "equals", "target": 5, "key": 0}, {"source": 13, "relation": "equals", "target": 85, "key": 0}, {"source": 15, "relation": "equals", "target": 1, "key": 0}, {"source": 17, "relation": "equals", "target": 24, "key": 0}, {"source": 19, "relation": "equals", "target": 79, "key": 0}, {"source": 21, "relation": "equals", "target": 81, "key": 0}, {"source": 23, "relation": "equals", "target": 80, "key": 0}, {"source": 25, "relation": "equals", "target": 52, "key": 0}, {"source": 28, "relation": "equals", "target": 62, "key": 0}, {"source": 31, "relation": "equals", "target": 59, "key": 0}, {"source": 37, "relation": "equals", "target": 18, "key": 0}, {"source": 38, "relation": "equals", "target": 4, "key": 0}, {"source": 44, "relation": "equals", "target": 97, "key": 0}, {"source": 45, "relation": "equals", "target": 94, "key": 0}, {"source": 46, "relation": "equals", "target": 0, "key": 0}, {"source": 50, "relation": "equals", "target": 67, "key": 0}, {"source": 51, "relation": "equals", "target": 68, "key": 0}, {"source": 53, "relation": "equals", "target": 70, "key": 0}, {"source": 55, "relation": "equals", "target": 63, "key": 0}, {"source": 56, "relation": "equals", "target": 22, "key": 0}, {"source": 57, "relation": "equals", "target": 74, "key": 0}, {"source": 58, "relation": "equals", "target": 78, "key": 0}, {"source": 64, "relation": "equals", "target": 91, "key": 0}, {"source": 65, "relation": "equals", "target": 90, "key": 0}, {"source": 69, "relation": "equals", "target": 72, "key": 0}, {"source": 71, "relation": "equals", "target": 73, "key": 0}, {"source": 75, "relation": "equals", "target": 77, "key": 0}, {"source": 76, "relation": "equals", "target": 61, "key": 0}, {"source": 83, "relation": "equals", "target": 20, "key": 0}, {"source": 84, "relation": "equals", "target": 14, "key": 0}, {"source": 86, "relation": "equals", "target": 43, "key": 0}, {"source": 87, "relation": "equals", "target": 47, "key": 0}, {"source": 88, "relation": "equals", "target": 48, "key": 0}, {"source": 92, "relation": "equals", "target": 99, "key": 0}, {"source": 96, "relation": "equals", "target": 39, "key": 0}, {"source": 98, "relation": "equals", "target": 60, "key": 0}, {"source": 100, "relation": "equals", "target": 26, "key": 0}, {"source": 101, "relation": "equals", "target": 34, "key": 0}, {"source": 102, "relation": "equals", "target": 41, "key": 0}, {"source": 103, "relation": "equals", "target": 35, "key": 0}, {"source": 104, "relation": "equals", "target": 36, "key": 0}, {"source": 105, "relation": "equals", "target": 30, "key": 0}, {"source": 106, "relation": "equals", "target": 29, "key": 0}, {"source": 107, "relation": "equals", "target": 40, "key": 0}, {"source": 108, "relation": "equals", "target": 32, "key": 0}], "multigraph": true}
+  </script>
+  <style type="text/css">
+   .container {
+	width: initial;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+div#visualization button#zoomin {
+  position: absolute;
+  right: 30px;
+  top: 50px;
+  z-index: 99;
+}
+div#visualization button#zoomout {
+  position: absolute;
+  right: 30px;
+  top: 80px;
+  z-index: 99;
+}	
+div#visualization button#reset {
+  position: absolute;
+  right: 30px;
+  top: 110px;
+  z-index: 99;
+}
+
+
+div#adjacency1x1 text.activeLegend {
+  fill: khaki;
+  font-weight: bold;
+}
+div#adjacency1x1 text.activeTick {
+   fill: khaki;
+   font-weight: bold;
+}
+div#adjacency1x1 button#zoomin {
+  position: absolute;
+  right: 30px;
+  top: 50px;
+  z-index: 99;
+}
+div#adjacency1x1 button#zoomout {
+  position: absolute;
+  right: 30px;
+  top: 80px;
+  z-index: 99;
+}	
+div#adjacency1x1 button#reset {
+  position: absolute;
+  right: 30px;
+  top: 110px;
+  z-index: 99;
+}
+
+
+div#adjacency text.activeLegend {
+  fill: khaki;
+  font-weight: bold;
+}
+div#adjacency text.activeTick {
+   fill: khaki;
+   font-weight: bold;
+}
+div#adjacency button#zoomin {
+  position: absolute;
+  right: 30px;
+  top: 50px;
+  z-index: 99;
+}
+div#adjacency button#zoomout {
+  position: absolute;
+  right: 30px;
+  top: 80px;
+  z-index: 99;
+}	
+div#adjacency button#reset {
+  position: absolute;
+  right: 30px;
+  top: 110px;
+  z-index: 99;
+}
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <ul class="nav nav-tabs">
+    <li class="active">
+     <a data-toggle="tab" href="#cleantax">
+      Cleantax
+     </a>
+    </li>
+    <li>
+     <a data-toggle="tab" href="#visualization">
+      Visualization
+     </a>
+    </li>
+    <li>
+     <a data-toggle="tab" href="#adjacency1x1">
+      Adjacency 1x1
+     </a>
+    </li>
+    <li>
+     <a data-toggle="tab" href="#adjacency">
+      Adjacency
+     </a>
+    </li>
+   </ul>
+   <div class="tab-content">
+    <div class="tab-pane fade in active" id="cleantax">
+     <textarea cols="150" disabled="" id="cleantax-textarea" rows="30">taxonomy CEN Census_Regions
+(USA Midwest Northeast South West)
+(West AZ CA CO ID MT NM NV OR UT WA WY)
+(South AL AR DC DE FL GA KY LA MD MS NC OK SC TN TX VA WV)
+(Northeast CT MA ME NH NJ NY PA RI VT)
+(Midwest IA IL IN KS MI MN MO ND NE OH SD WI)
+
+taxonomy NDC National_Diversity_Council
+(USA Midwest Northeast Southeast Southwest West)
+(West CA CO ID MT NV OR UT WA WY)
+(Southwest AZ NM OK TX)
+(Southeast AL AR FL GA KY LA MS NC SC TN VA WV)
+(Northeast CT DC DE MA MD ME NH NJ NY PA RI VT)
+(Midwest IA IL IN KS MI MN MO ND NE OH SD WI)
+
+articulation
+[CEN.AL equals NDC.AL]
+[CEN.AR equals NDC.AR]
+[CEN.AZ equals NDC.AZ]
+[CEN.CA equals NDC.CA]
+[CEN.CO equals NDC.CO]
+[CEN.CT equals NDC.CT]
+[CEN.DC equals NDC.DC]
+[CEN.DE equals NDC.DE]
+[CEN.FL equals NDC.FL]
+[CEN.GA equals NDC.GA]
+[CEN.IA equals NDC.IA]
+[CEN.ID equals NDC.ID]
+[CEN.IL equals NDC.IL]
+[CEN.IN equals NDC.IN]
+[CEN.KS equals NDC.KS]
+[CEN.KY equals NDC.KY]
+[CEN.LA equals NDC.LA]
+[CEN.MA equals NDC.MA]
+[CEN.MD equals NDC.MD]
+[CEN.ME equals NDC.ME]
+[CEN.MI equals NDC.MI]
+[CEN.MN equals NDC.MN]
+[CEN.MO equals NDC.MO]
+[CEN.MS equals NDC.MS]
+[CEN.MT equals NDC.MT]
+[CEN.NC equals NDC.NC]
+[CEN.ND equals NDC.ND]
+[CEN.NE equals NDC.NE]
+[CEN.NH equals NDC.NH]
+[CEN.NJ equals NDC.NJ]
+[CEN.NM equals NDC.NM]
+[CEN.NV equals NDC.NV]
+[CEN.NY equals NDC.NY]
+[CEN.OH equals NDC.OH]
+[CEN.OK equals NDC.OK]
+[CEN.OR equals NDC.OR]
+[CEN.PA equals NDC.PA]
+[CEN.RI equals NDC.RI]
+[CEN.SC equals NDC.SC]
+[CEN.SD equals NDC.SD]
+[CEN.TN equals NDC.TN]
+[CEN.TX equals NDC.TX]
+[CEN.UT equals NDC.UT]
+[CEN.VA equals NDC.VA]
+[CEN.VT equals NDC.VT]
+[CEN.WA equals NDC.WA]
+[CEN.WI equals NDC.WI]
+[CEN.WV equals NDC.WV]
+[CEN.WY equals NDC.WY]
+</textarea>
+    </div>
+    <div class="tab-pane fade" id="visualization">
+     <button id="zoomin">
+      Zoom in
+     </button>
+     <button id="zoomout">
+      Zoom out
+     </button>
+     <button id="reset">
+      Reset
+     </button>
+<svg height="2483pt" viewbox="0.00 0.00 954.04 2483.00" width="954pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g class="graph" id="graph0" transform="scale(1 1) rotate(0) translate(4 2479)">
+  <title>
+   %3
+  </title>
+  <polygon fill="white" points="-4,4 -4,-2479 950.037,-2479 950.037,4 -4,4" stroke="none">
+  </polygon>
+  <!-- CEN.IL -->
+  <g class="node" id="node1">
+   <title>
+    CEN.IL
+   </title>
+   <polygon fill="#ccffcc" points="451,-1001 391,-1001 391,-965 451,-965 451,-1001" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-979.3">
+    CEN.IL
+   </text>
+  </g>
+  <!-- NDC.IL -->
+  <g class="node" id="node57">
+   <title>
+    NDC.IL
+   </title>
+   <polygon fill="#ffffcc" points="596.181,-971.544 596.181,-986.456 571.094,-997 535.616,-997 510.529,-986.456 510.529,-971.544 535.616,-961 571.094,-961 596.181,-971.544" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-975.3">
+    NDC.IL
+   </text>
+  </g>
+  <!-- CEN.IL&#45;&gt;NDC.IL -->
+  <g class="edge" id="edge132">
+   <title>
+    CEN.IL-&gt;NDC.IL
+   </title>
+   <path d="M451.254,-982.102C465.676,-981.66 483.51,-981.113 500.165,-980.601" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="500.454,-984.094 510.342,-980.289 500.239,-977.098 500.454,-984.094" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-985.8">
+    =
+   </text>
+  </g>
+  <!-- CEN.IN -->
+  <g class="node" id="node2">
+   <title>
+    CEN.IN
+   </title>
+   <polygon fill="#ccffcc" points="452,-953 390,-953 390,-917 452,-917 452,-953" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-931.3">
+    CEN.IN
+   </text>
+  </g>
+  <!-- NDC.IN -->
+  <g class="node" id="node58">
+   <title>
+    NDC.IN
+   </title>
+   <polygon fill="#ffffcc" points="597.496,-922.544 597.496,-937.456 571.639,-948 535.071,-948 509.214,-937.456 509.214,-922.544 535.071,-912 571.639,-912 597.496,-922.544" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-926.3">
+    NDC.IN
+   </text>
+  </g>
+  <!-- CEN.IN&#45;&gt;NDC.IN -->
+  <g class="edge" id="edge141">
+   <title>
+    CEN.IN-&gt;NDC.IN
+   </title>
+   <path d="M452.234,-933.84C466.054,-933.31 482.85,-932.666 498.706,-932.058" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="499.09,-935.546 508.949,-931.665 498.822,-928.551 499.09,-935.546" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-936.8">
+    =
+   </text>
+  </g>
+  <!-- CEN.RI -->
+  <g class="node" id="node3">
+   <title>
+    CEN.RI
+   </title>
+   <polygon fill="#ccffcc" points="452,-2324 390,-2324 390,-2288 452,-2288 452,-2324" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-2302.3">
+    CEN.RI
+   </text>
+  </g>
+  <!-- NDC.RI -->
+  <g class="node" id="node103">
+   <title>
+    NDC.RI
+   </title>
+   <polygon fill="#ffffcc" points="597.496,-2295.54 597.496,-2310.46 571.639,-2321 535.071,-2321 509.214,-2310.46 509.214,-2295.54 535.071,-2285 571.639,-2285 597.496,-2295.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-2299.3">
+    NDC.RI
+   </text>
+  </g>
+  <!-- CEN.RI&#45;&gt;NDC.RI -->
+  <g class="edge" id="edge154">
+   <title>
+    CEN.RI-&gt;NDC.RI
+   </title>
+   <path d="M452.234,-2305.3C466.054,-2304.99 482.85,-2304.6 498.706,-2304.23" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="499.032,-2307.73 508.949,-2304 498.871,-2300.73 499.032,-2307.73" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-2307.8">
+    =
+   </text>
+  </g>
+  <!-- CEN.IA -->
+  <g class="node" id="node4">
+   <title>
+    CEN.IA
+   </title>
+   <polygon fill="#ccffcc" points="452,-905 390,-905 390,-869 452,-869 452,-905" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-883.3">
+    CEN.IA
+   </text>
+  </g>
+  <!-- NDC.IA -->
+  <g class="node" id="node56">
+   <title>
+    NDC.IA
+   </title>
+   <polygon fill="#ffffcc" points="597.088,-878.544 597.088,-893.456 571.47,-904 535.24,-904 509.622,-893.456 509.622,-878.544 535.24,-868 571.47,-868 597.088,-878.544" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-882.3">
+    NDC.IA
+   </text>
+  </g>
+  <!-- CEN.IA&#45;&gt;NDC.IA -->
+  <g class="edge" id="edge131">
+   <title>
+    CEN.IA-&gt;NDC.IA
+   </title>
+   <path d="M452.234,-886.768C466.177,-886.661 483.15,-886.531 499.13,-886.408" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="499.473,-889.906 509.446,-886.329 499.42,-882.906 499.473,-889.906" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-890.8">
+    =
+   </text>
+  </g>
+  <!-- CEN.WV -->
+  <g class="node" id="node5">
+   <title>
+    CEN.WV
+   </title>
+   <polygon fill="#ccffcc" points="456.5,-1319 385.5,-1319 385.5,-1283 456.5,-1283 456.5,-1319" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-1297.3">
+    CEN.WV
+   </text>
+  </g>
+  <!-- NDC.WV -->
+  <g class="node" id="node71">
+   <title>
+    NDC.WV
+   </title>
+   <polygon fill="#ffffcc" points="604.158,-1286.54 604.158,-1301.46 574.398,-1312 532.312,-1312 502.552,-1301.46 502.552,-1286.54 532.312,-1276 574.398,-1276 604.158,-1286.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-1290.3">
+    NDC.WV
+   </text>
+  </g>
+  <!-- CEN.WV&#45;&gt;NDC.WV -->
+  <g class="edge" id="edge128">
+   <title>
+    CEN.WV-&gt;NDC.WV
+   </title>
+   <path d="M456.59,-1299.14C467.551,-1298.55 480.004,-1297.89 492.219,-1297.23" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="492.588,-1300.71 502.386,-1296.68 492.213,-1293.72 492.588,-1300.71" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-1301.8">
+    =
+   </text>
+  </g>
+  <!-- CEN.KS -->
+  <g class="node" id="node6">
+   <title>
+    CEN.KS
+   </title>
+   <polygon fill="#ccffcc" points="454.5,-857 387.5,-857 387.5,-821 454.5,-821 454.5,-857" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-835.3">
+    CEN.KS
+   </text>
+  </g>
+  <!-- NDC.KS -->
+  <g class="node" id="node108">
+   <title>
+    NDC.KS
+   </title>
+   <polygon fill="#ffffcc" points="601.03,-835.544 601.03,-850.456 573.103,-861 533.607,-861 505.679,-850.456 505.679,-835.544 533.607,-825 573.103,-825 601.03,-835.544" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-839.3">
+    NDC.KS
+   </text>
+  </g>
+  <!-- CEN.KS&#45;&gt;NDC.KS -->
+  <g class="edge" id="edge147">
+   <title>
+    CEN.KS-&gt;NDC.KS
+   </title>
+   <path d="M454.558,-839.999C466.937,-840.379 481.431,-840.824 495.412,-841.253" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="495.361,-844.753 505.464,-841.561 495.576,-837.756 495.361,-844.753" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-844.8">
+    =
+   </text>
+  </g>
+  <!-- CEN.KY -->
+  <g class="node" id="node7">
+   <title>
+    CEN.KY
+   </title>
+   <polygon fill="#ccffcc" points="454.5,-1862 387.5,-1862 387.5,-1826 454.5,-1826 454.5,-1862" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-1840.3">
+    CEN.KY
+   </text>
+  </g>
+  <!-- NDC.KY -->
+  <g class="node" id="node107">
+   <title>
+    NDC.KY
+   </title>
+   <polygon fill="#ffffcc" points="601.03,-1836.54 601.03,-1851.46 573.103,-1862 533.607,-1862 505.679,-1851.46 505.679,-1836.54 533.607,-1826 573.103,-1826 601.03,-1836.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-1840.3">
+    NDC.KY
+   </text>
+  </g>
+  <!-- CEN.KY&#45;&gt;NDC.KY -->
+  <g class="edge" id="edge112">
+   <title>
+    CEN.KY-&gt;NDC.KY
+   </title>
+   <path d="M454.558,-1844C466.937,-1844 481.431,-1844 495.412,-1844" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="495.464,-1847.5 505.464,-1844 495.464,-1840.5 495.464,-1847.5" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-1847.8">
+    =
+   </text>
+  </g>
+  <!-- CEN.TX -->
+  <g class="node" id="node8">
+   <title>
+    CEN.TX
+   </title>
+   <polygon fill="#ccffcc" points="454,-1268 388,-1268 388,-1232 454,-1232 454,-1268" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-1246.3">
+    CEN.TX
+   </text>
+  </g>
+  <!-- NDC.TX -->
+  <g class="node" id="node98">
+   <title>
+    NDC.TX
+   </title>
+   <polygon fill="#ffffcc" points="600.623,-1224.54 600.623,-1239.46 572.934,-1250 533.776,-1250 506.087,-1239.46 506.087,-1224.54 533.776,-1214 572.934,-1214 600.623,-1224.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-1228.3">
+    NDC.TX
+   </text>
+  </g>
+  <!-- CEN.TX&#45;&gt;NDC.TX -->
+  <g class="edge" id="edge133">
+   <title>
+    CEN.TX-&gt;NDC.TX
+   </title>
+   <path d="M454.223,-1245.55C466.72,-1243.82 481.412,-1241.8 495.567,-1239.84" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="496.312,-1243.27 505.74,-1238.44 495.355,-1236.34 496.312,-1243.27" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-1245.8">
+    =
+   </text>
+  </g>
+  <!-- CEN.Northeast -->
+  <g class="node" id="node9">
+   <title>
+    CEN.Northeast
+   </title>
+   <polygon fill="#ccffcc" points="348,-2250 241,-2250 241,-2214 348,-2214 348,-2250" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="294.5" y="-2228.3">
+    CEN.Northeast
+   </text>
+  </g>
+  <!-- CEN.Northeast&#45;&gt;CEN.RI -->
+  <g class="edge" id="edge29">
+   <title>
+    CEN.Northeast-&gt;CEN.RI
+   </title>
+   <path d="M334.948,-2255.45C352.716,-2266.01 373.359,-2278.28 389.858,-2288.08" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="336.341,-2252.2 325.956,-2250.1 332.764,-2258.22 336.341,-2252.2" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.VT -->
+  <g class="node" id="node14">
+   <title>
+    CEN.VT
+   </title>
+   <polygon fill="#ccffcc" points="454,-2276 388,-2276 388,-2240 454,-2240 454,-2276" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-2254.3">
+    CEN.VT
+   </text>
+  </g>
+  <!-- CEN.Northeast&#45;&gt;CEN.VT -->
+  <g class="edge" id="edge14">
+   <title>
+    CEN.Northeast-&gt;CEN.VT
+   </title>
+   <path d="M358.095,-2245.07C368.346,-2247.21 378.584,-2249.35 387.698,-2251.25" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="358.804,-2241.64 348.299,-2243.03 357.373,-2248.5 358.804,-2241.64" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.MA -->
+  <g class="node" id="node17">
+   <title>
+    CEN.MA
+   </title>
+   <polygon fill="#ccffcc" points="456,-2230 386,-2230 386,-2194 456,-2194 456,-2230" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-2208.3">
+    CEN.MA
+   </text>
+  </g>
+  <!-- CEN.Northeast&#45;&gt;CEN.MA -->
+  <g class="edge" id="edge44">
+   <title>
+    CEN.Northeast-&gt;CEN.MA
+   </title>
+   <path d="M358.211,-2221.93C367.753,-2220.39 377.281,-2218.86 385.898,-2217.48" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="357.617,-2218.48 348.299,-2223.52 358.728,-2225.39 357.617,-2218.48" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.ME -->
+  <g class="node" id="node19">
+   <title>
+    CEN.ME
+   </title>
+   <polygon fill="#ccffcc" points="456,-2181 386,-2181 386,-2145 456,-2145 456,-2181" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-2159.3">
+    CEN.ME
+   </text>
+  </g>
+  <!-- CEN.Northeast&#45;&gt;CEN.ME -->
+  <g class="edge" id="edge50">
+   <title>
+    CEN.Northeast-&gt;CEN.ME
+   </title>
+   <path d="M337.08,-2208.96C353.505,-2199.85 372.097,-2189.55 387.508,-2181.01" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="335.261,-2205.96 328.211,-2213.87 338.654,-2212.08 335.261,-2205.96" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.CT -->
+  <g class="node" id="node33">
+   <title>
+    CEN.CT
+   </title>
+   <polygon fill="#ccffcc" points="454.5,-2133 387.5,-2133 387.5,-2097 454.5,-2097 454.5,-2133" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-2111.3">
+    CEN.CT
+   </text>
+  </g>
+  <!-- CEN.Northeast&#45;&gt;CEN.CT -->
+  <g class="edge" id="edge8">
+   <title>
+    CEN.Northeast-&gt;CEN.CT
+   </title>
+   <path d="M316.755,-2206.05C333.965,-2185.92 359.464,-2158 385,-2137 386.552,-2135.72 388.184,-2134.46 389.858,-2133.23" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="313.913,-2203.99 310.135,-2213.89 319.261,-2208.51 313.913,-2203.99" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.PA -->
+  <g class="node" id="node43">
+   <title>
+    CEN.PA
+   </title>
+   <polygon fill="#ccffcc" points="454.5,-2083 387.5,-2083 387.5,-2047 454.5,-2047 454.5,-2083" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-2061.3">
+    CEN.PA
+   </text>
+  </g>
+  <!-- CEN.Northeast&#45;&gt;CEN.PA -->
+  <g class="edge" id="edge13">
+   <title>
+    CEN.Northeast-&gt;CEN.PA
+   </title>
+   <path d="M308.006,-2204.61C323.074,-2173.71 350.697,-2123.18 385,-2088 386.624,-2086.33 388.389,-2084.73 390.235,-2083.19" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="304.716,-2203.38 303.562,-2213.91 311.032,-2206.4 304.716,-2203.38" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.NY -->
+  <g class="node" id="node45">
+   <title>
+    CEN.NY
+   </title>
+   <polygon fill="#ccffcc" points="455,-2475 387,-2475 387,-2439 455,-2439 455,-2475" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-2453.3">
+    CEN.NY
+   </text>
+  </g>
+  <!-- CEN.Northeast&#45;&gt;CEN.NY -->
+  <g class="edge" id="edge7">
+   <title>
+    CEN.Northeast-&gt;CEN.NY
+   </title>
+   <path d="M302.624,-2259.86C314.294,-2301.26 340.724,-2379.82 385,-2433 386.697,-2435.04 388.609,-2436.98 390.642,-2438.81" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="305.989,-2258.9 299.973,-2250.18 299.237,-2260.75 305.989,-2258.9" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.NH -->
+  <g class="node" id="node49">
+   <title>
+    CEN.NH
+   </title>
+   <polygon fill="#ccffcc" points="455,-2424 387,-2424 387,-2388 455,-2388 455,-2424" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-2402.3">
+    CEN.NH
+   </text>
+  </g>
+  <!-- CEN.Northeast&#45;&gt;CEN.NH -->
+  <g class="edge" id="edge16">
+   <title>
+    CEN.Northeast-&gt;CEN.NH
+   </title>
+   <path d="M307.041,-2259.29C321.67,-2291.58 349.338,-2345.65 385,-2383 386.607,-2384.68 388.359,-2386.3 390.194,-2387.85" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="310.179,-2257.73 302.925,-2250.01 303.781,-2260.57 310.179,-2257.73" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.NJ -->
+  <g class="node" id="node50">
+   <title>
+    CEN.NJ
+   </title>
+   <polygon fill="#ccffcc" points="453.5,-2374 388.5,-2374 388.5,-2338 453.5,-2338 453.5,-2374" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-2352.3">
+    CEN.NJ
+   </text>
+  </g>
+  <!-- CEN.Northeast&#45;&gt;CEN.NJ -->
+  <g class="edge" id="edge21">
+   <title>
+    CEN.Northeast-&gt;CEN.NJ
+   </title>
+   <path d="M315.437,-2258.12C332.55,-2279.61 358.573,-2310.12 385,-2333 386.869,-2334.62 388.859,-2336.21 390.905,-2337.76" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="318.047,-2255.78 309.112,-2250.09 312.545,-2260.11 318.047,-2255.78" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.South -->
+  <g class="node" id="node10">
+   <title>
+    CEN.South
+   </title>
+   <polygon fill="#ccffcc" points="336.5,-1594 252.5,-1594 252.5,-1558 336.5,-1558 336.5,-1594" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="294.5" y="-1572.3">
+    CEN.South
+   </text>
+  </g>
+  <!-- CEN.South&#45;&gt;CEN.WV -->
+  <g class="edge" id="edge45">
+   <title>
+    CEN.South-&gt;CEN.WV
+   </title>
+   <path d="M299.705,-1547.76C308.266,-1498.21 331.624,-1394.33 385,-1325 386.618,-1322.9 388.473,-1320.91 390.467,-1319.05" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="296.23,-1547.31 298.053,-1557.75 303.137,-1548.45 296.23,-1547.31" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.South&#45;&gt;CEN.KY -->
+  <g class="edge" id="edge32">
+   <title>
+    CEN.South-&gt;CEN.KY
+   </title>
+   <path d="M300.034,-1604.12C309.013,-1652.55 332.875,-1752.93 385,-1820 386.628,-1822.09 388.49,-1824.07 390.488,-1825.93" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="303.442,-1603.3 298.247,-1594.06 296.55,-1604.52 303.442,-1603.3" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.South&#45;&gt;CEN.TX -->
+  <g class="edge" id="edge48">
+   <title>
+    CEN.South-&gt;CEN.TX
+   </title>
+   <path d="M297.604,-1547.77C303.097,-1490.86 322.139,-1360.41 385,-1274 386.474,-1271.97 388.173,-1270.06 390.013,-1268.27" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="294.109,-1547.56 296.702,-1557.83 301.081,-1548.18 294.109,-1547.56" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.TN -->
+  <g class="node" id="node12">
+   <title>
+    CEN.TN
+   </title>
+   <polygon fill="#ccffcc" points="454.5,-1470 387.5,-1470 387.5,-1434 454.5,-1434 454.5,-1470" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-1448.3">
+    CEN.TN
+   </text>
+  </g>
+  <!-- CEN.South&#45;&gt;CEN.TN -->
+  <g class="edge" id="edge12">
+   <title>
+    CEN.South-&gt;CEN.TN
+   </title>
+   <path d="M314.967,-1549.84C331.974,-1528.04 358.092,-1496.94 385,-1474 386.529,-1472.7 388.143,-1471.41 389.804,-1470.17" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="312.019,-1547.94 308.696,-1558 317.567,-1552.2 312.019,-1547.94" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.MS -->
+  <g class="node" id="node15">
+   <title>
+    CEN.MS
+   </title>
+   <polygon fill="#ccffcc" points="456,-1420 386,-1420 386,-1384 456,-1384 456,-1420" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-1398.3">
+    CEN.MS
+   </text>
+  </g>
+  <!-- CEN.South&#45;&gt;CEN.MS -->
+  <g class="edge" id="edge27">
+   <title>
+    CEN.South-&gt;CEN.MS
+   </title>
+   <path d="M307.041,-1548.71C321.67,-1516.42 349.338,-1462.35 385,-1425 386.607,-1423.32 388.359,-1421.7 390.194,-1420.15" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="303.781,-1547.43 302.925,-1557.99 310.179,-1550.27 303.781,-1547.43" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.MD -->
+  <g class="node" id="node20">
+   <title>
+    CEN.MD
+   </title>
+   <polygon fill="#ccffcc" points="456.5,-1913 385.5,-1913 385.5,-1877 456.5,-1877 456.5,-1913" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-1891.3">
+    CEN.MD
+   </text>
+  </g>
+  <!-- CEN.South&#45;&gt;CEN.MD -->
+  <g class="edge" id="edge17">
+   <title>
+    CEN.South-&gt;CEN.MD
+   </title>
+   <path d="M297.862,-1604.33C303.777,-1660.32 323.482,-1787 385,-1871 386.48,-1873.02 388.185,-1874.93 390.027,-1876.72" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="301.318,-1603.71 296.854,-1594.11 294.352,-1604.4 301.318,-1603.71" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.DC -->
+  <g class="node" id="node23">
+   <title>
+    CEN.DC
+   </title>
+   <polygon fill="#ccffcc" points="455,-2015 387,-2015 387,-1979 455,-1979 455,-2015" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-1993.3">
+    CEN.DC
+   </text>
+  </g>
+  <!-- CEN.South&#45;&gt;CEN.DC -->
+  <g class="edge" id="edge23">
+   <title>
+    CEN.South-&gt;CEN.DC
+   </title>
+   <path d="M295.069,-1604.12C295.345,-1673.13 304.281,-1853.93 385,-1973 386.406,-1975.07 388.055,-1977.02 389.859,-1978.84" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="298.569,-1604.03 295.089,-1594.03 291.569,-1604.02 298.569,-1604.03" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.DE -->
+  <g class="node" id="node24">
+   <title>
+    CEN.DE
+   </title>
+   <polygon fill="#ccffcc" points="455,-1964 387,-1964 387,-1928 455,-1928 455,-1964" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-1942.3">
+    CEN.DE
+   </text>
+  </g>
+  <!-- CEN.South&#45;&gt;CEN.DE -->
+  <g class="edge" id="edge24">
+   <title>
+    CEN.South-&gt;CEN.DE
+   </title>
+   <path d="M302.152,-1604.02C314.259,-1654.68 340.964,-1764.78 366,-1857 373.886,-1886.05 367.34,-1897.63 385,-1922 386.47,-1924.03 388.167,-1925.94 390.004,-1927.73" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="305.52,-1603.06 299.795,-1594.14 298.711,-1604.68 305.52,-1603.06" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.VA -->
+  <g class="node" id="node27">
+   <title>
+    CEN.VA
+   </title>
+   <polygon fill="#ccffcc" points="454.5,-1811 387.5,-1811 387.5,-1775 454.5,-1775 454.5,-1811" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-1789.3">
+    CEN.VA
+   </text>
+  </g>
+  <!-- CEN.South&#45;&gt;CEN.VA -->
+  <g class="edge" id="edge1">
+   <title>
+    CEN.South-&gt;CEN.VA
+   </title>
+   <path d="M303.162,-1603.61C315.31,-1643.57 342.108,-1718.28 385,-1769 386.713,-1771.03 388.636,-1772.96 390.676,-1774.78" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="306.513,-1602.6 300.321,-1594 299.8,-1604.59 306.513,-1602.6" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.FL -->
+  <g class="node" id="node28">
+   <title>
+    CEN.FL
+   </title>
+   <polygon fill="#ccffcc" points="453.5,-1760 388.5,-1760 388.5,-1724 453.5,-1724 453.5,-1760" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-1738.3">
+    CEN.FL
+   </text>
+  </g>
+  <!-- CEN.South&#45;&gt;CEN.FL -->
+  <g class="edge" id="edge20">
+   <title>
+    CEN.South-&gt;CEN.FL
+   </title>
+   <path d="M308.294,-1603.69C323.455,-1634.42 350.998,-1684.24 385,-1719 386.627,-1720.66 388.394,-1722.27 390.241,-1723.81" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="311.32,-1601.91 303.815,-1594.43 305.018,-1604.96 311.32,-1601.91" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.AR -->
+  <g class="node" id="node29">
+   <title>
+    CEN.AR
+   </title>
+   <polygon fill="#ccffcc" points="455,-1710 387,-1710 387,-1674 455,-1674 455,-1710" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-1688.3">
+    CEN.AR
+   </text>
+  </g>
+  <!-- CEN.South&#45;&gt;CEN.AR -->
+  <g class="edge" id="edge39">
+   <title>
+    CEN.South-&gt;CEN.AR
+   </title>
+   <path d="M317.116,-1602.02C334.347,-1621.9 359.705,-1649.31 385,-1670 386.556,-1671.27 388.19,-1672.53 389.866,-1673.76" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="319.64,-1599.58 310.477,-1594.27 314.324,-1604.14 319.64,-1599.58" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.AL -->
+  <g class="node" id="node31">
+   <title>
+    CEN.AL
+   </title>
+   <polygon fill="#ccffcc" points="453.5,-1661 388.5,-1661 388.5,-1625 453.5,-1625 453.5,-1661" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-1639.3">
+    CEN.AL
+   </text>
+  </g>
+  <!-- CEN.South&#45;&gt;CEN.AL -->
+  <g class="edge" id="edge49">
+   <title>
+    CEN.South-&gt;CEN.AL
+   </title>
+   <path d="M338.112,-1598.93C354.609,-1607.81 373.156,-1617.79 388.422,-1626.01" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="339.656,-1595.79 329.191,-1594.13 336.339,-1601.95 339.656,-1595.79" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.OK -->
+  <g class="node" id="node32">
+   <title>
+    CEN.OK
+   </title>
+   <polygon fill="#ccffcc" points="455.5,-605 386.5,-605 386.5,-569 455.5,-569 455.5,-605" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-583.3">
+    CEN.OK
+   </text>
+  </g>
+  <!-- CEN.South&#45;&gt;CEN.OK -->
+  <g class="edge" id="edge35">
+   <title>
+    CEN.South-&gt;CEN.OK
+   </title>
+   <path d="M297.983,-1547.44C311.81,-1388.66 378.888,-621.404 385,-611 386.194,-608.967 387.637,-607.067 389.247,-605.299" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="294.462,-1547.53 297.082,-1557.8 301.436,-1548.14 294.462,-1547.53" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.SC -->
+  <g class="node" id="node37">
+   <title>
+    CEN.SC
+   </title>
+   <polygon fill="#ccffcc" points="455,-1614 387,-1614 387,-1578 455,-1578 455,-1614" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-1592.3">
+    CEN.SC
+   </text>
+  </g>
+  <!-- CEN.South&#45;&gt;CEN.SC -->
+  <g class="edge" id="edge47">
+   <title>
+    CEN.South-&gt;CEN.SC
+   </title>
+   <path d="M346.765,-1584.24C360.283,-1586.41 374.515,-1588.69 386.801,-1590.67" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="347.04,-1580.73 336.611,-1582.6 345.929,-1587.65 347.04,-1580.73" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.LA -->
+  <g class="node" id="node39">
+   <title>
+    CEN.LA
+   </title>
+   <polygon fill="#ccffcc" points="453.5,-1566 388.5,-1566 388.5,-1530 453.5,-1530 453.5,-1566" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-1544.3">
+    CEN.LA
+   </text>
+  </g>
+  <!-- CEN.South&#45;&gt;CEN.LA -->
+  <g class="edge" id="edge28">
+   <title>
+    CEN.South-&gt;CEN.LA
+   </title>
+   <path d="M346.713,-1564.48C360.837,-1561.31 375.744,-1557.95 388.399,-1555.11" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="345.599,-1561.15 336.611,-1566.75 347.135,-1567.97 345.599,-1561.15" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.GA -->
+  <g class="node" id="node42">
+   <title>
+    CEN.GA
+   </title>
+   <polygon fill="#ccffcc" points="455.5,-1518 386.5,-1518 386.5,-1482 455.5,-1482 455.5,-1518" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-1496.3">
+    CEN.GA
+   </text>
+  </g>
+  <!-- CEN.South&#45;&gt;CEN.GA -->
+  <g class="edge" id="edge3">
+   <title>
+    CEN.South-&gt;CEN.GA
+   </title>
+   <path d="M333.646,-1552.71C351.849,-1541.6 373.305,-1528.5 390.276,-1518.15" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="331.717,-1549.79 325.005,-1557.99 335.364,-1555.77 331.717,-1549.79" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.NC -->
+  <g class="node" id="node54">
+   <title>
+    CEN.NC
+   </title>
+   <polygon fill="#ccffcc" points="455,-1370 387,-1370 387,-1334 455,-1334 455,-1370" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-1348.3">
+    CEN.NC
+   </text>
+  </g>
+  <!-- CEN.South&#45;&gt;CEN.NC -->
+  <g class="edge" id="edge43">
+   <title>
+    CEN.South-&gt;CEN.NC
+   </title>
+   <path d="M302.491,-1548.02C313.989,-1506.48 340.202,-1427.74 385,-1375 386.412,-1373.34 387.974,-1371.75 389.631,-1370.24" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="299.093,-1547.18 299.882,-1557.74 305.854,-1548.99 299.093,-1547.18" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.ID -->
+  <g class="node" id="node11">
+   <title>
+    CEN.ID
+   </title>
+   <polygon fill="#ccffcc" points="452,-291 390,-291 390,-255 452,-255 452,-291" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-269.3">
+    CEN.ID
+   </text>
+  </g>
+  <!-- NDC.ID -->
+  <g class="node" id="node55">
+   <title>
+    NDC.ID
+   </title>
+   <polygon fill="#ffffcc" points="597.496,-263.544 597.496,-278.456 571.639,-289 535.071,-289 509.214,-278.456 509.214,-263.544 535.071,-253 571.639,-253 597.496,-263.544" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-267.3">
+    NDC.ID
+   </text>
+  </g>
+  <!-- CEN.ID&#45;&gt;NDC.ID -->
+  <g class="edge" id="edge149">
+   <title>
+    CEN.ID-&gt;NDC.ID
+   </title>
+   <path d="M452.234,-272.536C466.054,-272.324 482.85,-272.066 498.706,-271.823" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="499.004,-275.319 508.949,-271.666 498.896,-268.32 499.004,-275.319" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-276.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.TN -->
+  <g class="node" id="node90">
+   <title>
+    NDC.TN
+   </title>
+   <polygon fill="#ffffcc" points="601.03,-1452.54 601.03,-1467.46 573.103,-1478 533.607,-1478 505.679,-1467.46 505.679,-1452.54 533.607,-1442 573.103,-1442 601.03,-1452.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-1456.3">
+    NDC.TN
+   </text>
+  </g>
+  <!-- CEN.TN&#45;&gt;NDC.TN -->
+  <g class="edge" id="edge137">
+   <title>
+    CEN.TN-&gt;NDC.TN
+   </title>
+   <path d="M454.558,-1454C466.937,-1454.76 481.431,-1455.65 495.412,-1456.51" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="495.268,-1460 505.464,-1457.12 495.697,-1453.02 495.268,-1460" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-1458.8">
+    =
+   </text>
+  </g>
+  <!-- CEN.WY -->
+  <g class="node" id="node13">
+   <title>
+    CEN.WY
+   </title>
+   <polygon fill="#ccffcc" points="456.5,-243 385.5,-243 385.5,-207 456.5,-207 456.5,-243" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-221.3">
+    CEN.WY
+   </text>
+  </g>
+  <!-- NDC.WY -->
+  <g class="node" id="node70">
+   <title>
+    NDC.WY
+   </title>
+   <polygon fill="#ffffcc" points="604.158,-220.544 604.158,-235.456 574.398,-246 532.312,-246 502.552,-235.456 502.552,-220.544 532.312,-210 574.398,-210 604.158,-220.544" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-224.3">
+    NDC.WY
+   </text>
+  </g>
+  <!-- CEN.WY&#45;&gt;NDC.WY -->
+  <g class="edge" id="edge145">
+   <title>
+    CEN.WY-&gt;NDC.WY
+   </title>
+   <path d="M456.59,-225.796C467.551,-226.048 480.004,-226.335 492.219,-226.616" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="492.308,-230.119 502.386,-226.85 492.469,-223.121 492.308,-230.119" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-230.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.VT -->
+  <g class="node" id="node85">
+   <title>
+    NDC.VT
+   </title>
+   <polygon fill="#ffffcc" points="600.623,-2245.54 600.623,-2260.46 572.934,-2271 533.776,-2271 506.087,-2260.46 506.087,-2245.54 533.776,-2235 572.934,-2235 600.623,-2245.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-2249.3">
+    NDC.VT
+   </text>
+  </g>
+  <!-- CEN.VT&#45;&gt;NDC.VT -->
+  <g class="edge" id="edge144">
+   <title>
+    CEN.VT-&gt;NDC.VT
+   </title>
+   <path d="M454.223,-2256.76C466.72,-2256.28 481.412,-2255.72 495.567,-2255.18" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="495.881,-2258.67 505.74,-2254.79 495.613,-2251.67 495.881,-2258.67" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-2258.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.MS -->
+  <g class="node" id="node93">
+   <title>
+    NDC.MS
+   </title>
+   <polygon fill="#ffffcc" points="603.251,-1405.54 603.251,-1420.46 574.023,-1431 532.687,-1431 503.459,-1420.46 503.459,-1405.54 532.687,-1395 574.023,-1395 603.251,-1405.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-1409.3">
+    NDC.MS
+   </text>
+  </g>
+  <!-- CEN.MS&#45;&gt;NDC.MS -->
+  <g class="edge" id="edge122">
+   <title>
+    CEN.MS-&gt;NDC.MS
+   </title>
+   <path d="M456.249,-1404.89C467.558,-1405.84 480.485,-1406.94 493.112,-1408" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="492.878,-1411.49 503.137,-1408.85 493.467,-1404.52 492.878,-1411.49" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-1410.8">
+    =
+   </text>
+  </g>
+  <!-- CEN.MT -->
+  <g class="node" id="node16">
+   <title>
+    CEN.MT
+   </title>
+   <polygon fill="#ccffcc" points="455.5,-435 386.5,-435 386.5,-399 455.5,-399 455.5,-435" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-413.3">
+    CEN.MT
+   </text>
+  </g>
+  <!-- NDC.MT -->
+  <g class="node" id="node94">
+   <title>
+    NDC.MT
+   </title>
+   <polygon fill="#ffffcc" points="602.845,-409.544 602.845,-424.456 573.854,-435 532.855,-435 503.865,-424.456 503.865,-409.544 532.855,-399 573.854,-399 602.845,-409.544" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-413.3">
+    NDC.MT
+   </text>
+  </g>
+  <!-- CEN.MT&#45;&gt;NDC.MT -->
+  <g class="edge" id="edge116">
+   <title>
+    CEN.MT-&gt;NDC.MT
+   </title>
+   <path d="M455.57,-417C467.117,-417 480.411,-417 493.376,-417" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="493.662,-420.5 503.662,-417 493.662,-413.5 493.662,-420.5" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-420.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.MA -->
+  <g class="node" id="node95">
+   <title>
+    NDC.MA
+   </title>
+   <polygon fill="#ffffcc" points="603.251,-2197.54 603.251,-2212.46 574.023,-2223 532.687,-2223 503.459,-2212.46 503.459,-2197.54 532.687,-2187 574.023,-2187 603.251,-2197.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-2201.3">
+    NDC.MA
+   </text>
+  </g>
+  <!-- CEN.MA&#45;&gt;NDC.MA -->
+  <g class="edge" id="edge129">
+   <title>
+    CEN.MA-&gt;NDC.MA
+   </title>
+   <path d="M456.249,-2210.16C467.558,-2209.55 480.485,-2208.86 493.112,-2208.18" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="493.339,-2211.67 503.137,-2207.64 492.964,-2204.68 493.339,-2211.67" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-2212.8">
+    =
+   </text>
+  </g>
+  <!-- CEN.USA -->
+  <g class="node" id="node18">
+   <title>
+    CEN.USA
+   </title>
+   <polygon fill="#ccffcc" points="204,-1115 127,-1115 127,-1079 204,-1079 204,-1115" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="165.5" y="-1093.3">
+    CEN.USA
+   </text>
+  </g>
+  <!-- CEN.USA&#45;&gt;CEN.Northeast -->
+  <g class="edge" id="edge52">
+   <title>
+    CEN.USA-&gt;CEN.Northeast
+   </title>
+   <path d="M169.674,-1125.37C187.693,-1286.4 276.834,-2083.06 291.466,-2213.82" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="173.137,-1124.84 168.546,-1115.29 166.18,-1125.62 173.137,-1124.84" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.USA&#45;&gt;CEN.South -->
+  <g class="edge" id="edge38">
+   <title>
+    CEN.USA-&gt;CEN.South
+   </title>
+   <path d="M173.935,-1125.04C197.377,-1213.46 269.332,-1484.85 288.672,-1557.79" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="177.269,-1123.96 171.323,-1115.19 170.503,-1125.76 177.269,-1123.96" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.Midwest -->
+  <g class="node" id="node38">
+   <title>
+    CEN.Midwest
+   </title>
+   <polygon fill="#ccffcc" points="344,-953 245,-953 245,-917 344,-917 344,-953" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="294.5" y="-931.3">
+    CEN.Midwest
+   </text>
+  </g>
+  <!-- CEN.USA&#45;&gt;CEN.Midwest -->
+  <g class="edge" id="edge18">
+   <title>
+    CEN.USA-&gt;CEN.Midwest
+   </title>
+   <path d="M187.3,-1070.47C213.14,-1037.51 256.557,-982.125 279.036,-953.45" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="184.237,-1068.7 180.822,-1078.73 189.746,-1073.02 184.237,-1068.7" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.West -->
+  <g class="node" id="node44">
+   <title>
+    CEN.West
+   </title>
+   <polygon fill="#ccffcc" points="334.5,-308 254.5,-308 254.5,-272 334.5,-272 334.5,-308" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="294.5" y="-286.3">
+    CEN.West
+   </text>
+  </g>
+  <!-- CEN.USA&#45;&gt;CEN.West -->
+  <g class="edge" id="edge51">
+   <title>
+    CEN.USA-&gt;CEN.West
+   </title>
+   <path d="M171.004,-1068.38C191.311,-939.343 274.068,-413.474 290.613,-308.343" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="167.488,-1068.21 169.391,-1078.63 174.403,-1069.29 167.488,-1068.21" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.ME -->
+  <g class="node" id="node92">
+   <title>
+    NDC.ME
+   </title>
+   <polygon fill="#ffffcc" points="603.251,-2151.54 603.251,-2166.46 574.023,-2177 532.687,-2177 503.459,-2166.46 503.459,-2151.54 532.687,-2141 574.023,-2141 603.251,-2151.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-2155.3">
+    NDC.ME
+   </text>
+  </g>
+  <!-- CEN.ME&#45;&gt;NDC.ME -->
+  <g class="edge" id="edge150">
+   <title>
+    CEN.ME-&gt;NDC.ME
+   </title>
+   <path d="M456.249,-2161.95C467.558,-2161.6 480.485,-2161.21 493.112,-2160.82" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="493.249,-2164.32 503.137,-2160.51 493.035,-2157.32 493.249,-2164.32" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-2164.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.MD -->
+  <g class="node" id="node96">
+   <title>
+    NDC.MD
+   </title>
+   <polygon fill="#ffffcc" points="603.251,-1898.54 603.251,-1913.46 574.023,-1924 532.687,-1924 503.459,-1913.46 503.459,-1898.54 532.687,-1888 574.023,-1888 603.251,-1898.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-1902.3">
+    NDC.MD
+   </text>
+  </g>
+  <!-- CEN.MD&#45;&gt;NDC.MD -->
+  <g class="edge" id="edge125">
+   <title>
+    CEN.MD-&gt;NDC.MD
+   </title>
+   <path d="M456.59,-1897.92C467.899,-1898.87 480.795,-1899.96 493.381,-1901.02" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="493.112,-1904.51 503.371,-1901.87 493.701,-1897.54 493.112,-1904.51" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-1903.8">
+    =
+   </text>
+  </g>
+  <!-- CEN.MI -->
+  <g class="node" id="node21">
+   <title>
+    CEN.MI
+   </title>
+   <polygon fill="#ccffcc" points="453.5,-808 388.5,-808 388.5,-772 453.5,-772 453.5,-808" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-786.3">
+    CEN.MI
+   </text>
+  </g>
+  <!-- NDC.MI -->
+  <g class="node" id="node97">
+   <title>
+    NDC.MI
+   </title>
+   <polygon fill="#ffffcc" points="599.31,-791.544 599.31,-806.456 572.39,-817 534.32,-817 507.4,-806.456 507.4,-791.544 534.32,-781 572.39,-781 599.31,-791.544" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-795.3">
+    NDC.MI
+   </text>
+  </g>
+  <!-- CEN.MI&#45;&gt;NDC.MI -->
+  <g class="edge" id="edge146">
+   <title>
+    CEN.MI-&gt;NDC.MI
+   </title>
+   <path d="M453.555,-792.179C466.657,-793.083 482.254,-794.16 497.141,-795.188" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="497.077,-798.692 507.295,-795.889 497.559,-791.708 497.077,-798.692" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-798.8">
+    =
+   </text>
+  </g>
+  <!-- CEN.MN -->
+  <g class="node" id="node22">
+   <title>
+    CEN.MN
+   </title>
+   <polygon fill="#ccffcc" points="456.5,-758 385.5,-758 385.5,-722 456.5,-722 456.5,-758" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-736.3">
+    CEN.MN
+   </text>
+  </g>
+  <!-- NDC.MN -->
+  <g class="node" id="node99">
+   <title>
+    NDC.MN
+   </title>
+   <polygon fill="#ffffcc" points="603.251,-744.544 603.251,-759.456 574.023,-770 532.687,-770 503.459,-759.456 503.459,-744.544 532.687,-734 574.023,-734 603.251,-744.544" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-748.3">
+    NDC.MN
+   </text>
+  </g>
+  <!-- CEN.MN&#45;&gt;NDC.MN -->
+  <g class="edge" id="edge142">
+   <title>
+    CEN.MN-&gt;NDC.MN
+   </title>
+   <path d="M456.59,-743.184C467.899,-744.225 480.795,-745.412 493.381,-746.571" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="493.092,-750.059 503.371,-747.491 493.734,-743.089 493.092,-750.059" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-749.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.DC -->
+  <g class="node" id="node106">
+   <title>
+    NDC.DC
+   </title>
+   <polygon fill="#ffffcc" points="601.937,-2017.54 601.937,-2032.46 573.478,-2043 533.232,-2043 504.773,-2032.46 504.773,-2017.54 533.232,-2007 573.478,-2007 601.937,-2017.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-2021.3">
+    NDC.DC
+   </text>
+  </g>
+  <!-- CEN.DC&#45;&gt;NDC.DC -->
+  <g class="edge" id="edge114">
+   <title>
+    CEN.DC-&gt;NDC.DC
+   </title>
+   <path d="M455.231,-2004.14C468.592,-2007.01 484.332,-2010.39 499.207,-2013.58" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="498.814,-2017.08 509.326,-2015.76 500.284,-2010.24 498.814,-2017.08" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-2013.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.DE -->
+  <g class="node" id="node105">
+   <title>
+    NDC.DE
+   </title>
+   <polygon fill="#ffffcc" points="601.03,-1964.54 601.03,-1979.46 573.103,-1990 533.607,-1990 505.679,-1979.46 505.679,-1964.54 533.607,-1954 573.103,-1954 601.03,-1964.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-1968.3">
+    NDC.DE
+   </text>
+  </g>
+  <!-- CEN.DE&#45;&gt;NDC.DE -->
+  <g class="edge" id="edge138">
+   <title>
+    CEN.DE-&gt;NDC.DE
+   </title>
+   <path d="M455.231,-1952.63C468.47,-1955.27 484.044,-1958.37 498.797,-1961.32" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="498.35,-1964.8 508.841,-1963.32 499.719,-1957.93 498.35,-1964.8" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-1961.8">
+    =
+   </text>
+  </g>
+  <!-- CEN.OR -->
+  <g class="node" id="node25">
+   <title>
+    CEN.OR
+   </title>
+   <polygon fill="#ccffcc" points="456,-386 386,-386 386,-350 456,-350 456,-386" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-364.3">
+    CEN.OR
+   </text>
+  </g>
+  <!-- NDC.OR -->
+  <g class="node" id="node87">
+   <title>
+    NDC.OR
+   </title>
+   <polygon fill="#ffffcc" points="603.251,-359.544 603.251,-374.456 574.023,-385 532.687,-385 503.459,-374.456 503.459,-359.544 532.687,-349 574.023,-349 603.251,-359.544" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-363.3">
+    NDC.OR
+   </text>
+  </g>
+  <!-- CEN.OR&#45;&gt;NDC.OR -->
+  <g class="edge" id="edge124">
+   <title>
+    CEN.OR-&gt;NDC.OR
+   </title>
+   <path d="M456.249,-367.737C467.558,-367.651 480.485,-367.551 493.112,-367.454" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="493.164,-370.954 503.137,-367.378 493.111,-363.954 493.164,-370.954" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-371.8">
+    =
+   </text>
+  </g>
+  <!-- CEN.OH -->
+  <g class="node" id="node26">
+   <title>
+    CEN.OH
+   </title>
+   <polygon fill="#ccffcc" points="456,-707 386,-707 386,-671 456,-671 456,-707" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-685.3">
+    CEN.OH
+   </text>
+  </g>
+  <!-- NDC.OH -->
+  <g class="node" id="node89">
+   <title>
+    NDC.OH
+   </title>
+   <polygon fill="#ffffcc" points="603.251,-691.544 603.251,-706.456 574.023,-717 532.687,-717 503.459,-706.456 503.459,-691.544 532.687,-681 574.023,-681 603.251,-691.544" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-695.3">
+    NDC.OH
+   </text>
+  </g>
+  <!-- CEN.OH&#45;&gt;NDC.OH -->
+  <g class="edge" id="edge155">
+   <title>
+    CEN.OH-&gt;NDC.OH
+   </title>
+   <path d="M456.249,-691.627C467.558,-692.495 480.485,-693.487 493.112,-694.455" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="492.899,-697.949 503.137,-695.224 493.434,-690.97 492.899,-697.949" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-697.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.VA -->
+  <g class="node" id="node86">
+   <title>
+    NDC.VA
+   </title>
+   <polygon fill="#ffffcc" points="601.03,-1785.54 601.03,-1800.46 573.103,-1811 533.607,-1811 505.679,-1800.46 505.679,-1785.54 533.607,-1775 573.103,-1775 601.03,-1785.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-1789.3">
+    NDC.VA
+   </text>
+  </g>
+  <!-- CEN.VA&#45;&gt;NDC.VA -->
+  <g class="edge" id="edge139">
+   <title>
+    CEN.VA-&gt;NDC.VA
+   </title>
+   <path d="M454.558,-1793C466.937,-1793 481.431,-1793 495.412,-1793" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="495.464,-1796.5 505.464,-1793 495.464,-1789.5 495.464,-1796.5" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-1796.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.FL -->
+  <g class="node" id="node91">
+   <title>
+    NDC.FL
+   </title>
+   <polygon fill="#ffffcc" points="599.31,-1734.54 599.31,-1749.46 572.39,-1760 534.32,-1760 507.4,-1749.46 507.4,-1734.54 534.32,-1724 572.39,-1724 599.31,-1734.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-1738.3">
+    NDC.FL
+   </text>
+  </g>
+  <!-- CEN.FL&#45;&gt;NDC.FL -->
+  <g class="edge" id="edge153">
+   <title>
+    CEN.FL-&gt;NDC.FL
+   </title>
+   <path d="M453.555,-1742C466.657,-1742 482.254,-1742 497.141,-1742" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="497.295,-1745.5 507.295,-1742 497.294,-1738.5 497.295,-1745.5" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-1745.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.AR -->
+  <g class="node" id="node83">
+   <title>
+    NDC.AR
+   </title>
+   <polygon fill="#ffffcc" points="601.03,-1684.54 601.03,-1699.46 573.103,-1710 533.607,-1710 505.679,-1699.46 505.679,-1684.54 533.607,-1674 573.103,-1674 601.03,-1684.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-1688.3">
+    NDC.AR
+   </text>
+  </g>
+  <!-- CEN.AR&#45;&gt;NDC.AR -->
+  <g class="edge" id="edge123">
+   <title>
+    CEN.AR-&gt;NDC.AR
+   </title>
+   <path d="M455.231,-1692C467.373,-1692 481.481,-1692 495.117,-1692" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="495.413,-1695.5 505.413,-1692 495.413,-1688.5 495.413,-1695.5" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-1695.8">
+    =
+   </text>
+  </g>
+  <!-- CEN.AZ -->
+  <g class="node" id="node30">
+   <title>
+    CEN.AZ
+   </title>
+   <polygon fill="#ccffcc" points="454,-485 388,-485 388,-449 454,-449 454,-485" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-463.3">
+    CEN.AZ
+   </text>
+  </g>
+  <!-- NDC.AZ -->
+  <g class="node" id="node82">
+   <title>
+    NDC.AZ
+   </title>
+   <polygon fill="#ffffcc" points="600.623,-473.544 600.623,-488.456 572.934,-499 533.776,-499 506.087,-488.456 506.087,-473.544 533.776,-463 572.934,-463 600.623,-473.544" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-477.3">
+    NDC.AZ
+   </text>
+  </g>
+  <!-- CEN.AZ&#45;&gt;NDC.AZ -->
+  <g class="edge" id="edge121">
+   <title>
+    CEN.AZ-&gt;NDC.AZ
+   </title>
+   <path d="M454.223,-470.461C466.72,-471.803 481.412,-473.381 495.567,-474.901" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="495.423,-478.406 505.74,-475.994 496.171,-471.446 495.423,-478.406" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-477.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.AL -->
+  <g class="node" id="node84">
+   <title>
+    NDC.AL
+   </title>
+   <polygon fill="#ffffcc" points="599.716,-1634.54 599.716,-1649.46 572.558,-1660 534.152,-1660 506.994,-1649.46 506.994,-1634.54 534.152,-1624 572.558,-1624 599.716,-1634.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-1638.3">
+    NDC.AL
+   </text>
+  </g>
+  <!-- CEN.AL&#45;&gt;NDC.AL -->
+  <g class="edge" id="edge108">
+   <title>
+    CEN.AL-&gt;NDC.AL
+   </title>
+   <path d="M453.555,-1642.76C466.534,-1642.66 481.963,-1642.54 496.723,-1642.43" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="496.825,-1645.93 506.797,-1642.35 496.771,-1638.93 496.825,-1645.93" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-1645.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.OK -->
+  <g class="node" id="node88">
+   <title>
+    NDC.OK
+   </title>
+   <polygon fill="#ffffcc" points="602.845,-570.544 602.845,-585.456 573.854,-596 532.855,-596 503.865,-585.456 503.865,-570.544 532.855,-560 573.854,-560 602.845,-570.544" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-574.3">
+    NDC.OK
+   </text>
+  </g>
+  <!-- CEN.OK&#45;&gt;NDC.OK -->
+  <g class="edge" id="edge151">
+   <title>
+    CEN.OK-&gt;NDC.OK
+   </title>
+   <path d="M455.57,-584.682C467.117,-583.885 480.411,-582.967 493.376,-582.072" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="493.927,-585.542 503.662,-581.362 493.445,-578.559 493.927,-585.542" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-587.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.CT -->
+  <g class="node" id="node76">
+   <title>
+    NDC.CT
+   </title>
+   <polygon fill="#ffffcc" points="601.03,-2108.54 601.03,-2123.46 573.103,-2134 533.607,-2134 505.679,-2123.46 505.679,-2108.54 533.607,-2098 573.103,-2098 601.03,-2108.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-2112.3">
+    NDC.CT
+   </text>
+  </g>
+  <!-- CEN.CT&#45;&gt;NDC.CT -->
+  <g class="edge" id="edge118">
+   <title>
+    CEN.CT-&gt;NDC.CT
+   </title>
+   <path d="M454.558,-2115.25C466.937,-2115.34 481.431,-2115.46 495.412,-2115.56" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="495.437,-2119.06 505.464,-2115.64 495.491,-2112.06 495.437,-2119.06" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-2118.8">
+    =
+   </text>
+  </g>
+  <!-- CEN.CO -->
+  <g class="node" id="node34">
+   <title>
+    CEN.CO
+   </title>
+   <polygon fill="#ccffcc" points="456,-43 386,-43 386,-7 456,-7 456,-43" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-21.3">
+    CEN.CO
+   </text>
+  </g>
+  <!-- NDC.CO -->
+  <g class="node" id="node78">
+   <title>
+    NDC.CO
+   </title>
+   <polygon fill="#ffffcc" points="603.251,-10.5442 603.251,-25.4558 574.023,-36 532.687,-36 503.459,-25.4558 503.459,-10.5442 532.687,-7.10543e-15 574.023,-0 603.251,-10.5442" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-14.3">
+    NDC.CO
+   </text>
+  </g>
+  <!-- CEN.CO&#45;&gt;NDC.CO -->
+  <g class="edge" id="edge109">
+   <title>
+    CEN.CO-&gt;NDC.CO
+   </title>
+   <path d="M456.249,-23.1608C467.558,-22.5535 480.485,-21.8594 493.112,-21.1813" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="493.339,-24.6743 503.137,-20.643 492.964,-17.6843 493.339,-24.6743" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-26.8">
+    =
+   </text>
+  </g>
+  <!-- CEN.CA -->
+  <g class="node" id="node35">
+   <title>
+    CEN.CA
+   </title>
+   <polygon fill="#ccffcc" points="455,-195 387,-195 387,-159 455,-159 455,-195" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-173.3">
+    CEN.CA
+   </text>
+  </g>
+  <!-- NDC.CA -->
+  <g class="node" id="node77">
+   <title>
+    NDC.CA
+   </title>
+   <polygon fill="#ffffcc" points="601.03,-176.544 601.03,-191.456 573.103,-202 533.607,-202 505.679,-191.456 505.679,-176.544 533.607,-166 573.103,-166 601.03,-176.544" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-180.3">
+    NDC.CA
+   </text>
+  </g>
+  <!-- CEN.CA&#45;&gt;NDC.CA -->
+  <g class="edge" id="edge152">
+   <title>
+    CEN.CA-&gt;NDC.CA
+   </title>
+   <path d="M455.231,-178.785C467.373,-179.437 481.481,-180.194 495.117,-180.926" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="495.24,-184.438 505.413,-181.479 495.615,-177.448 495.24,-184.438" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-184.8">
+    =
+   </text>
+  </g>
+  <!-- CEN.SD -->
+  <g class="node" id="node36">
+   <title>
+    CEN.SD
+   </title>
+   <polygon fill="#ccffcc" points="455,-656 387,-656 387,-620 455,-620 455,-656" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-634.3">
+    CEN.SD
+   </text>
+  </g>
+  <!-- NDC.SD -->
+  <g class="node" id="node81">
+   <title>
+    NDC.SD
+   </title>
+   <polygon fill="#ffffcc" points="601.03,-625.544 601.03,-640.456 573.103,-651 533.607,-651 505.679,-640.456 505.679,-625.544 533.607,-615 573.103,-615 601.03,-625.544" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-629.3">
+    NDC.SD
+   </text>
+  </g>
+  <!-- CEN.SD&#45;&gt;NDC.SD -->
+  <g class="edge" id="edge113">
+   <title>
+    CEN.SD-&gt;NDC.SD
+   </title>
+   <path d="M455.231,-636.725C467.373,-636.26 481.481,-635.719 495.117,-635.195" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="495.555,-638.681 505.413,-634.801 495.286,-631.686 495.555,-638.681" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-639.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.SC -->
+  <g class="node" id="node101">
+   <title>
+    NDC.SC
+   </title>
+   <polygon fill="#ffffcc" points="601.03,-1585.54 601.03,-1600.46 573.103,-1611 533.607,-1611 505.679,-1600.46 505.679,-1585.54 533.607,-1575 573.103,-1575 601.03,-1585.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-1589.3">
+    NDC.SC
+   </text>
+  </g>
+  <!-- CEN.SC&#45;&gt;NDC.SC -->
+  <g class="edge" id="edge130">
+   <title>
+    CEN.SC-&gt;NDC.SC
+   </title>
+   <path d="M455.231,-1595.24C467.373,-1594.96 481.481,-1594.63 495.117,-1594.32" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="495.496,-1597.81 505.413,-1594.08 495.335,-1590.81 495.496,-1597.81" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-1597.8">
+    =
+   </text>
+  </g>
+  <!-- CEN.Midwest&#45;&gt;CEN.IL -->
+  <g class="edge" id="edge40">
+   <title>
+    CEN.Midwest-&gt;CEN.IL
+   </title>
+   <path d="M351.892,-956.741C365.322,-961.919 379.12,-967.239 390.754,-971.724" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="352.803,-953.342 342.213,-953.01 350.285,-959.873 352.803,-953.342" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.Midwest&#45;&gt;CEN.IN -->
+  <g class="edge" id="edge30">
+   <title>
+    CEN.Midwest-&gt;CEN.IN
+   </title>
+   <path d="M354.575,-935C366.845,-935 379.281,-935 389.967,-935" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="354.348,-931.5 344.348,-935 354.348,-938.5 354.348,-931.5" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.Midwest&#45;&gt;CEN.IA -->
+  <g class="edge" id="edge9">
+   <title>
+    CEN.Midwest-&gt;CEN.IA
+   </title>
+   <path d="M351.643,-913.354C364.728,-908.31 378.176,-903.125 389.645,-898.703" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="350.285,-910.127 342.213,-916.99 352.803,-916.658 350.285,-910.127" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.Midwest&#45;&gt;CEN.KS -->
+  <g class="edge" id="edge4">
+   <title>
+    CEN.Midwest-&gt;CEN.KS
+   </title>
+   <path d="M323.859,-909.948C341.095,-895.132 363.799,-876.329 385,-861 386.745,-859.738 388.561,-858.47 390.409,-857.215" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="321.136,-907.676 315.867,-916.868 325.718,-912.967 321.136,-907.676" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.Midwest&#45;&gt;CEN.MI -->
+  <g class="edge" id="edge19">
+   <title>
+    CEN.Midwest-&gt;CEN.MI
+   </title>
+   <path d="M311.027,-907.866C327.146,-881.288 354.274,-840.708 385,-812 386.468,-810.628 388.034,-809.293 389.659,-808.003" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="307.911,-906.258 305.797,-916.64 313.923,-909.843 307.911,-906.258" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.Midwest&#45;&gt;CEN.MN -->
+  <g class="edge" id="edge26">
+   <title>
+    CEN.Midwest-&gt;CEN.MN
+   </title>
+   <path d="M304.841,-907.395C318.176,-871.071 345.504,-806.726 385,-763 386.56,-761.273 388.276,-759.619 390.086,-758.046" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="301.529,-906.262 301.453,-916.856 308.12,-908.622 301.529,-906.262" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.Midwest&#45;&gt;CEN.OH -->
+  <g class="edge" id="edge41">
+   <title>
+    CEN.Midwest-&gt;CEN.OH
+   </title>
+   <path d="M301.279,-906.854C311.647,-861.893 336.95,-772.849 385,-713 386.661,-710.932 388.546,-708.971 390.561,-707.127" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="297.827,-906.258 299.07,-916.779 304.659,-907.779 297.827,-906.258" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.Midwest&#45;&gt;CEN.SD -->
+  <g class="edge" id="edge6">
+   <title>
+    CEN.Midwest-&gt;CEN.SD
+   </title>
+   <path d="M298.686,-906.921C305.878,-854.182 327.483,-738.728 385,-662 386.591,-659.878 388.427,-657.878 390.407,-656.008" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="295.207,-906.529 297.397,-916.895 302.149,-907.426 295.207,-906.529" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.MO -->
+  <g class="node" id="node40">
+   <title>
+    CEN.MO
+   </title>
+   <polygon fill="#ccffcc" points="457,-1199 385,-1199 385,-1163 457,-1163 457,-1199" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-1177.3">
+    CEN.MO
+   </text>
+  </g>
+  <!-- CEN.Midwest&#45;&gt;CEN.MO -->
+  <g class="edge" id="edge22">
+   <title>
+    CEN.Midwest-&gt;CEN.MO
+   </title>
+   <path d="M301.279,-963.146C311.647,-1008.11 336.95,-1097.15 385,-1157 386.661,-1159.07 388.546,-1161.03 390.561,-1162.87" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="304.659,-962.221 299.07,-953.221 297.827,-963.742 304.659,-962.221" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.ND -->
+  <g class="node" id="node51">
+   <title>
+    CEN.ND
+   </title>
+   <polygon fill="#ccffcc" points="455,-1148 387,-1148 387,-1112 455,-1112 455,-1148" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-1126.3">
+    CEN.ND
+   </text>
+  </g>
+  <!-- CEN.Midwest&#45;&gt;CEN.ND -->
+  <g class="edge" id="edge5">
+   <title>
+    CEN.Midwest-&gt;CEN.ND
+   </title>
+   <path d="M304.841,-962.605C318.176,-998.929 345.504,-1063.27 385,-1107 386.56,-1108.73 388.276,-1110.38 390.086,-1111.95" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="308.12,-961.378 301.453,-953.144 301.529,-963.738 308.12,-961.378" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.NE -->
+  <g class="node" id="node52">
+   <title>
+    CEN.NE
+   </title>
+   <polygon fill="#ccffcc" points="455,-1098 387,-1098 387,-1062 455,-1062 455,-1098" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-1076.3">
+    CEN.NE
+   </text>
+  </g>
+  <!-- CEN.Midwest&#45;&gt;CEN.NE -->
+  <g class="edge" id="edge36">
+   <title>
+    CEN.Midwest-&gt;CEN.NE
+   </title>
+   <path d="M311.027,-962.134C327.146,-988.712 354.274,-1029.29 385,-1058 386.468,-1059.37 388.034,-1060.71 389.659,-1062" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="313.923,-960.157 305.797,-953.36 307.911,-963.742 313.923,-960.157" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.WI -->
+  <g class="node" id="node53">
+   <title>
+    CEN.WI
+   </title>
+   <polygon fill="#ccffcc" points="454,-1049 388,-1049 388,-1013 454,-1013 454,-1049" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-1027.3">
+    CEN.WI
+   </text>
+  </g>
+  <!-- CEN.Midwest&#45;&gt;CEN.WI -->
+  <g class="edge" id="edge46">
+   <title>
+    CEN.Midwest-&gt;CEN.WI
+   </title>
+   <path d="M323.859,-960.052C341.095,-974.868 363.799,-993.671 385,-1009 386.745,-1010.26 388.561,-1011.53 390.409,-1012.79" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="325.718,-957.033 315.867,-953.132 321.136,-962.324 325.718,-957.033" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.LA -->
+  <g class="node" id="node74">
+   <title>
+    NDC.LA
+   </title>
+   <polygon fill="#ffffcc" points="599.716,-1539.54 599.716,-1554.46 572.558,-1565 534.152,-1565 506.994,-1554.46 506.994,-1539.54 534.152,-1529 572.558,-1529 599.716,-1539.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-1543.3">
+    NDC.LA
+   </text>
+  </g>
+  <!-- CEN.LA&#45;&gt;NDC.LA -->
+  <g class="edge" id="edge126">
+   <title>
+    CEN.LA-&gt;NDC.LA
+   </title>
+   <path d="M453.555,-1547.76C466.534,-1547.66 481.963,-1547.54 496.723,-1547.43" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="496.825,-1550.93 506.797,-1547.35 496.771,-1543.93 496.825,-1550.93" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-1550.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.MO -->
+  <g class="node" id="node100">
+   <title>
+    NDC.MO
+   </title>
+   <polygon fill="#ffffcc" points="604.565,-1173.54 604.565,-1188.46 574.567,-1199 532.143,-1199 502.145,-1188.46 502.145,-1173.54 532.143,-1163 574.567,-1163 604.565,-1173.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-1177.3">
+    NDC.MO
+   </text>
+  </g>
+  <!-- CEN.MO&#45;&gt;NDC.MO -->
+  <g class="edge" id="edge140">
+   <title>
+    CEN.MO-&gt;NDC.MO
+   </title>
+   <path d="M457.276,-1181C467.89,-1181 479.854,-1181 491.624,-1181" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="491.879,-1184.5 501.879,-1181 491.879,-1177.5 491.879,-1184.5" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-1184.8">
+    =
+   </text>
+  </g>
+  <!-- CEN.UT -->
+  <g class="node" id="node41">
+   <title>
+    CEN.UT
+   </title>
+   <polygon fill="#ccffcc" points="454.5,-145 387.5,-145 387.5,-109 454.5,-109 454.5,-145" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-123.3">
+    CEN.UT
+   </text>
+  </g>
+  <!-- NDC.UT -->
+  <g class="node" id="node75">
+   <title>
+    NDC.UT
+   </title>
+   <polygon fill="#ffffcc" points="601.03,-129.544 601.03,-144.456 573.103,-155 533.607,-155 505.679,-144.456 505.679,-129.544 533.607,-119 573.103,-119 601.03,-129.544" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-133.3">
+    NDC.UT
+   </text>
+  </g>
+  <!-- CEN.UT&#45;&gt;NDC.UT -->
+  <g class="edge" id="edge143">
+   <title>
+    CEN.UT-&gt;NDC.UT
+   </title>
+   <path d="M454.558,-129.498C466.937,-130.447 481.431,-131.559 495.412,-132.632" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="495.225,-136.128 505.464,-133.403 495.761,-129.148 495.225,-136.128" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-135.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.GA -->
+  <g class="node" id="node61">
+   <title>
+    NDC.GA
+   </title>
+   <polygon fill="#ffffcc" points="602.845,-1496.54 602.845,-1511.46 573.854,-1522 532.855,-1522 503.865,-1511.46 503.865,-1496.54 532.855,-1486 573.854,-1486 602.845,-1496.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-1500.3">
+    NDC.GA
+   </text>
+  </g>
+  <!-- CEN.GA&#45;&gt;NDC.GA -->
+  <g class="edge" id="edge117">
+   <title>
+    CEN.GA-&gt;NDC.GA
+   </title>
+   <path d="M455.57,-1501.03C467.117,-1501.38 480.411,-1501.79 493.376,-1502.19" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="493.559,-1505.7 503.662,-1502.51 493.774,-1498.7 493.559,-1505.7" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-1504.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.PA -->
+  <g class="node" id="node59">
+   <title>
+    NDC.PA
+   </title>
+   <polygon fill="#ffffcc" points="601.03,-2064.54 601.03,-2079.46 573.103,-2090 533.607,-2090 505.679,-2079.46 505.679,-2064.54 533.607,-2054 573.103,-2054 601.03,-2064.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-2068.3">
+    NDC.PA
+   </text>
+  </g>
+  <!-- CEN.PA&#45;&gt;NDC.PA -->
+  <g class="edge" id="edge110">
+   <title>
+    CEN.PA-&gt;NDC.PA
+   </title>
+   <path d="M454.558,-2066.75C466.937,-2067.41 481.431,-2068.19 495.412,-2068.94" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="495.29,-2072.44 505.464,-2069.48 495.666,-2065.45 495.29,-2072.44" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-2071.8">
+    =
+   </text>
+  </g>
+  <!-- CEN.West&#45;&gt;CEN.ID -->
+  <g class="edge" id="edge37">
+   <title>
+    CEN.West-&gt;CEN.ID
+   </title>
+   <path d="M344.845,-283.262C360.028,-281.189 376.284,-278.969 389.779,-277.127" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="343.986,-279.847 334.551,-284.668 344.933,-286.783 343.986,-279.847" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.West&#45;&gt;CEN.WY -->
+  <g class="edge" id="edge34">
+   <title>
+    CEN.West-&gt;CEN.WY
+   </title>
+   <path d="M339.362,-267.1C354.498,-259.198 371.227,-250.464 385.506,-243.009" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="337.425,-264.163 330.18,-271.894 340.665,-270.368 337.425,-264.163" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.West&#45;&gt;CEN.MT -->
+  <g class="edge" id="edge10">
+   <title>
+    CEN.West-&gt;CEN.MT
+   </title>
+   <path d="M314.301,-316.281C331.202,-338.792 357.529,-371.242 385,-395 386.52,-396.315 388.126,-397.605 389.782,-398.86" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="317.066,-314.133 308.302,-308.179 311.44,-318.298 317.066,-314.133" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.West&#45;&gt;CEN.OR -->
+  <g class="edge" id="edge42">
+   <title>
+    CEN.West-&gt;CEN.OR
+   </title>
+   <path d="M332.898,-313.43C351.464,-325.062 373.559,-338.904 390.85,-349.737" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="334.708,-310.434 324.376,-308.091 330.992,-316.366 334.708,-310.434" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.West&#45;&gt;CEN.AZ -->
+  <g class="edge" id="edge53">
+   <title>
+    CEN.West-&gt;CEN.AZ
+   </title>
+   <path d="M306.916,-317.845C321.425,-350.784 348.975,-405.94 385,-444 386.599,-445.69 388.346,-447.317 390.178,-448.87" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="310.009,-316.178 302.837,-308.379 303.581,-318.948 310.009,-316.178" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.West&#45;&gt;CEN.CO -->
+  <g class="edge" id="edge11">
+   <title>
+    CEN.West-&gt;CEN.CO
+   </title>
+   <path d="M300.193,-261.868C309.36,-213.902 333.434,-115.079 385,-49 386.632,-46.909 388.497,-44.9314 390.497,-43.0768" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="296.725,-261.374 298.363,-271.842 303.61,-262.637 296.725,-261.374" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.West&#45;&gt;CEN.CA -->
+  <g class="edge" id="edge33">
+   <title>
+    CEN.West-&gt;CEN.CA
+   </title>
+   <path d="M317.893,-264.176C335.185,-245.024 360.264,-218.898 385,-199 386.678,-197.65 388.443,-196.315 390.252,-195.009" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="315.26,-261.87 311.21,-271.66 320.481,-266.532 315.26,-261.87" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.West&#45;&gt;CEN.UT -->
+  <g class="edge" id="edge2">
+   <title>
+    CEN.West-&gt;CEN.UT
+   </title>
+   <path d="M308.423,-262.907C323.699,-232.842 351.346,-184.08 385,-150 386.635,-148.344 388.408,-146.743 390.259,-145.209" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="305.235,-261.458 303.906,-271.969 311.499,-264.581 305.235,-261.458" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.NV -->
+  <g class="node" id="node46">
+   <title>
+    CEN.NV
+   </title>
+   <polygon fill="#ccffcc" points="455,-94 387,-94 387,-58 455,-58 455,-94" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-72.3">
+    CEN.NV
+   </text>
+  </g>
+  <!-- CEN.West&#45;&gt;CEN.NV -->
+  <g class="edge" id="edge15">
+   <title>
+    CEN.West-&gt;CEN.NV
+   </title>
+   <path d="M303.536,-261.963C315.937,-222.425 342.813,-149.584 385,-100 386.719,-97.9799 388.646,-96.0533 390.69,-94.2339" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="300.128,-261.138 300.557,-271.724 306.823,-263.181 300.128,-261.138" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.NM -->
+  <g class="node" id="node47">
+   <title>
+    CEN.NM
+   </title>
+   <polygon fill="#ccffcc" points="456.5,-536 385.5,-536 385.5,-500 456.5,-500 456.5,-536" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-514.3">
+    CEN.NM
+   </text>
+  </g>
+  <!-- CEN.West&#45;&gt;CEN.NM -->
+  <g class="edge" id="edge25">
+   <title>
+    CEN.West-&gt;CEN.NM
+   </title>
+   <path d="M302.433,-317.962C313.924,-359.892 340.205,-439.9 385,-494 386.692,-496.043 388.6,-497.986 390.63,-499.817" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="305.779,-316.926 299.828,-308.161 299.014,-318.725 305.779,-316.926" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- CEN.WA -->
+  <g class="node" id="node48">
+   <title>
+    CEN.WA
+   </title>
+   <polygon fill="#ccffcc" points="456.5,-339 385.5,-339 385.5,-303 456.5,-303 456.5,-339" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="421" y="-317.3">
+    CEN.WA
+   </text>
+  </g>
+  <!-- CEN.West&#45;&gt;CEN.WA -->
+  <g class="edge" id="edge31">
+   <title>
+    CEN.West-&gt;CEN.WA
+   </title>
+   <path d="M344.319,-302.156C358.011,-305.565 372.613,-309.201 385.302,-312.36" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="345.1,-298.743 334.551,-299.724 343.409,-305.536 345.1,-298.743" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.NY -->
+  <g class="node" id="node63">
+   <title>
+    NDC.NY
+   </title>
+   <polygon fill="#ffffcc" points="601.03,-2447.54 601.03,-2462.46 573.103,-2473 533.607,-2473 505.679,-2462.46 505.679,-2447.54 533.607,-2437 573.103,-2437 601.03,-2447.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-2451.3">
+    NDC.NY
+   </text>
+  </g>
+  <!-- CEN.NY&#45;&gt;NDC.NY -->
+  <g class="edge" id="edge134">
+   <title>
+    CEN.NY-&gt;NDC.NY
+   </title>
+   <path d="M455.231,-2456.49C467.373,-2456.3 481.481,-2456.09 495.117,-2455.88" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="495.468,-2459.37 505.413,-2455.72 495.361,-2452.37 495.468,-2459.37" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-2459.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.NV -->
+  <g class="node" id="node62">
+   <title>
+    NDC.NV
+   </title>
+   <polygon fill="#ffffcc" points="601.03,-76.5442 601.03,-91.4558 573.103,-102 533.607,-102 505.679,-91.4558 505.679,-76.5442 533.607,-66 573.103,-66 601.03,-76.5442" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-80.3">
+    NDC.NV
+   </text>
+  </g>
+  <!-- CEN.NV&#45;&gt;NDC.NV -->
+  <g class="edge" id="edge148">
+   <title>
+    CEN.NV-&gt;NDC.NV
+   </title>
+   <path d="M455.231,-78.0394C467.373,-78.7846 481.481,-79.6504 495.117,-80.4873" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="495.218,-83.9999 505.413,-81.1191 495.646,-77.0131 495.218,-83.9999" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-83.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.NM -->
+  <g class="node" id="node67">
+   <title>
+    NDC.NM
+   </title>
+   <polygon fill="#ffffcc" points="603.251,-524.544 603.251,-539.456 574.023,-550 532.687,-550 503.459,-539.456 503.459,-524.544 532.687,-514 574.023,-514 603.251,-524.544" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-528.3">
+    NDC.NM
+   </text>
+  </g>
+  <!-- CEN.NM&#45;&gt;NDC.NM -->
+  <g class="edge" id="edge135">
+   <title>
+    CEN.NM-&gt;NDC.NM
+   </title>
+   <path d="M456.59,-521.715C467.899,-522.929 480.795,-524.315 493.381,-525.666" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="493.054,-529.151 503.371,-526.739 493.802,-522.191 493.054,-529.151" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-528.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.WA -->
+  <g class="node" id="node73">
+   <title>
+    NDC.WA
+   </title>
+   <polygon fill="#ffffcc" points="604.158,-309.544 604.158,-324.456 574.398,-335 532.312,-335 502.552,-324.456 502.552,-309.544 532.312,-299 574.398,-299 604.158,-309.544" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-313.3">
+    NDC.WA
+   </text>
+  </g>
+  <!-- CEN.WA&#45;&gt;NDC.WA -->
+  <g class="edge" id="edge120">
+   <title>
+    CEN.WA-&gt;NDC.WA
+   </title>
+   <path d="M456.59,-319.939C467.551,-319.602 480.004,-319.22 492.219,-318.845" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="492.498,-322.338 502.386,-318.533 492.283,-315.342 492.498,-322.338" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-323.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.NH -->
+  <g class="node" id="node68">
+   <title>
+    NDC.NH
+   </title>
+   <polygon fill="#ffffcc" points="601.937,-2396.54 601.937,-2411.46 573.478,-2422 533.232,-2422 504.773,-2411.46 504.773,-2396.54 533.232,-2386 573.478,-2386 601.937,-2396.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-2400.3">
+    NDC.NH
+   </text>
+  </g>
+  <!-- CEN.NH&#45;&gt;NDC.NH -->
+  <g class="edge" id="edge127">
+   <title>
+    CEN.NH-&gt;NDC.NH
+   </title>
+   <path d="M455.231,-2405.49C467.133,-2405.31 480.923,-2405.1 494.307,-2404.89" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="494.479,-2408.39 504.424,-2404.74 494.372,-2401.39 494.479,-2408.39" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-2408.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.NJ -->
+  <g class="node" id="node69">
+   <title>
+    NDC.NJ
+   </title>
+   <polygon fill="#ffffcc" points="599.716,-2345.54 599.716,-2360.46 572.558,-2371 534.152,-2371 506.994,-2360.46 506.994,-2345.54 534.152,-2335 572.558,-2335 599.716,-2345.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-2349.3">
+    NDC.NJ
+   </text>
+  </g>
+  <!-- CEN.NJ&#45;&gt;NDC.NJ -->
+  <g class="edge" id="edge156">
+   <title>
+    CEN.NJ-&gt;NDC.NJ
+   </title>
+   <path d="M453.555,-2355.27C466.534,-2354.98 481.963,-2354.62 496.723,-2354.28" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="496.881,-2357.78 506.797,-2354.05 496.72,-2350.78 496.881,-2357.78" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-2357.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.ND -->
+  <g class="node" id="node65">
+   <title>
+    NDC.ND
+   </title>
+   <polygon fill="#ffffcc" points="601.937,-1122.54 601.937,-1137.46 573.478,-1148 533.232,-1148 504.773,-1137.46 504.773,-1122.54 533.232,-1112 573.478,-1112 601.937,-1122.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-1126.3">
+    NDC.ND
+   </text>
+  </g>
+  <!-- CEN.ND&#45;&gt;NDC.ND -->
+  <g class="edge" id="edge111">
+   <title>
+    CEN.ND-&gt;NDC.ND
+   </title>
+   <path d="M455.231,-1130C467.133,-1130 480.923,-1130 494.307,-1130" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="494.424,-1133.5 504.424,-1130 494.424,-1126.5 494.424,-1133.5" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-1133.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.NE -->
+  <g class="node" id="node64">
+   <title>
+    NDC.NE
+   </title>
+   <polygon fill="#ffffcc" points="601.03,-1071.54 601.03,-1086.46 573.103,-1097 533.607,-1097 505.679,-1086.46 505.679,-1071.54 533.607,-1061 573.103,-1061 601.03,-1071.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-1075.3">
+    NDC.NE
+   </text>
+  </g>
+  <!-- CEN.NE&#45;&gt;NDC.NE -->
+  <g class="edge" id="edge119">
+   <title>
+    CEN.NE-&gt;NDC.NE
+   </title>
+   <path d="M455.231,-1079.75C467.373,-1079.65 481.481,-1079.54 495.117,-1079.44" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="495.44,-1082.94 505.413,-1079.36 495.387,-1075.94 495.44,-1082.94" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-1083.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.WI -->
+  <g class="node" id="node72">
+   <title>
+    NDC.WI
+   </title>
+   <polygon fill="#ffffcc" points="600.623,-1021.54 600.623,-1036.46 572.934,-1047 533.776,-1047 506.087,-1036.46 506.087,-1021.54 533.776,-1011 572.934,-1011 600.623,-1021.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-1025.3">
+    NDC.WI
+   </text>
+  </g>
+  <!-- CEN.WI&#45;&gt;NDC.WI -->
+  <g class="edge" id="edge115">
+   <title>
+    CEN.WI-&gt;NDC.WI
+   </title>
+   <path d="M454.223,-1030.51C466.72,-1030.31 481.412,-1030.09 495.567,-1029.87" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="495.795,-1033.37 505.74,-1029.72 495.687,-1026.37 495.795,-1033.37" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-1034.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.NC -->
+  <g class="node" id="node66">
+   <title>
+    NDC.NC
+   </title>
+   <polygon fill="#ffffcc" points="601.937,-1352.54 601.937,-1367.46 573.478,-1378 533.232,-1378 504.773,-1367.46 504.773,-1352.54 533.232,-1342 573.478,-1342 601.937,-1352.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="553.355" y="-1356.3">
+    NDC.NC
+   </text>
+  </g>
+  <!-- CEN.NC&#45;&gt;NDC.NC -->
+  <g class="edge" id="edge136">
+   <title>
+    CEN.NC-&gt;NDC.NC
+   </title>
+   <path d="M455.231,-1354.04C467.133,-1354.77 480.923,-1355.62 494.307,-1356.44" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="494.229,-1359.94 504.424,-1357.06 494.658,-1352.95 494.229,-1359.94" stroke="#000000">
+   </polygon>
+   <text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="479.5" y="-1358.8">
+    =
+   </text>
+  </g>
+  <!-- NDC.West -->
+  <g class="node" id="node79">
+   <title>
+    NDC.West
+   </title>
+   <polygon fill="#ffffcc" points="778.17,-242.544 778.17,-257.456 744.801,-268 697.609,-268 664.239,-257.456 664.239,-242.544 697.609,-232 744.801,-232 778.17,-242.544" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="721.205" y="-246.3">
+    NDC.West
+   </text>
+  </g>
+  <!-- NDC.ID&#45;&gt;NDC.West -->
+  <g class="edge" id="edge57">
+   <title>
+    NDC.ID-&gt;NDC.West
+   </title>
+   <path d="M597.497,-265.537C614.744,-263.353 635.001,-260.789 654.03,-258.379" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="654.665,-261.827 664.146,-257.098 653.785,-254.882 654.665,-261.827" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.Midwest -->
+  <g class="node" id="node102">
+   <title>
+    NDC.Midwest
+   </title>
+   <polygon fill="#ffffcc" points="791.403,-899.544 791.403,-914.456 750.282,-925 692.127,-925 651.006,-914.456 651.006,-899.544 692.127,-889 750.282,-889 791.403,-899.544" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="721.205" y="-903.3">
+    NDC.Midwest
+   </text>
+  </g>
+  <!-- NDC.IA&#45;&gt;NDC.Midwest -->
+  <g class="edge" id="edge106">
+   <title>
+    NDC.IA-&gt;NDC.Midwest
+   </title>
+   <path d="M597.065,-891.408C611.451,-893.23 627.968,-895.321 644.135,-897.368" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="643.773,-900.85 654.133,-898.634 644.652,-893.905 643.773,-900.85" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.IL&#45;&gt;NDC.Midwest -->
+  <g class="edge" id="edge71">
+   <title>
+    NDC.IL-&gt;NDC.Midwest
+   </title>
+   <path d="M584.006,-966.128C609.035,-955.262 645.293,-939.521 674.107,-927.012" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="675.787,-930.099 683.566,-922.906 672.999,-923.678 675.787,-930.099" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.IN&#45;&gt;NDC.Midwest -->
+  <g class="edge" id="edge74">
+   <title>
+    NDC.IN-&gt;NDC.Midwest
+   </title>
+   <path d="M597.497,-924.017C612.36,-921.956 629.458,-919.585 646.078,-917.28" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="646.917,-920.697 656.341,-915.857 645.955,-913.763 646.917,-920.697" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.Northeast -->
+  <g class="node" id="node80">
+   <title>
+    NDC.Northeast
+   </title>
+   <polygon fill="#ffffcc" points="797.159,-2151.54 797.159,-2166.46 752.666,-2177 689.743,-2177 645.25,-2166.46 645.25,-2151.54 689.743,-2141 752.666,-2141 797.159,-2151.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="721.205" y="-2155.3">
+    NDC.Northeast
+   </text>
+  </g>
+  <!-- NDC.PA&#45;&gt;NDC.Northeast -->
+  <g class="edge" id="edge95">
+   <title>
+    NDC.PA-&gt;NDC.Northeast
+   </title>
+   <path d="M586.008,-2085.25C592.259,-2088.03 598.733,-2091.02 604.71,-2094 630.593,-2106.9 658.899,-2122.8 681.011,-2135.64" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="679.375,-2138.74 689.775,-2140.76 682.906,-2132.7 679.375,-2138.74" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.Southeast -->
+  <g class="node" id="node60">
+   <title>
+    NDC.Southeast
+   </title>
+   <polygon fill="#ffffcc" points="798.473,-1539.54 798.473,-1554.46 753.21,-1565 689.199,-1565 643.936,-1554.46 643.936,-1539.54 689.199,-1529 753.21,-1529 798.473,-1539.54" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="721.205" y="-1543.3">
+    NDC.Southeast
+   </text>
+  </g>
+  <!-- NDC.USA -->
+  <g class="node" id="node109">
+   <title>
+    NDC.USA
+   </title>
+   <polygon fill="#ffffcc" points="946.207,-899.544 946.207,-914.456 914.376,-925 869.36,-925 837.53,-914.456 837.53,-899.544 869.36,-889 914.376,-889 946.207,-899.544" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="891.868" y="-903.3">
+    NDC.USA
+   </text>
+  </g>
+  <!-- NDC.Southeast&#45;&gt;NDC.USA -->
+  <g class="edge" id="edge101">
+   <title>
+    NDC.Southeast-&gt;NDC.USA
+   </title>
+   <path d="M726.981,-1528.88C750.561,-1439.4 854.58,-1044.7 883.427,-935.234" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="886.889,-935.832 886.053,-925.27 880.12,-934.048 886.889,-935.832" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.GA&#45;&gt;NDC.Southeast -->
+  <g class="edge" id="edge88">
+   <title>
+    NDC.GA-&gt;NDC.Southeast
+   </title>
+   <path d="M594.926,-1514.52C614.133,-1519.5 637.483,-1525.55 658.796,-1531.08" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="658.186,-1534.54 668.744,-1533.66 659.943,-1527.76 658.186,-1534.54" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.NV&#45;&gt;NDC.West -->
+  <g class="edge" id="edge75">
+   <title>
+    NDC.NV-&gt;NDC.West
+   </title>
+   <path d="M585.399,-97.5228C592.088,-101.106 598.89,-105.305 604.71,-110 645.779,-143.132 682.541,-192.828 703.055,-223.238" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="700.193,-225.255 708.644,-231.645 706.023,-221.379 700.193,-225.255" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.NY&#45;&gt;NDC.Northeast -->
+  <g class="edge" id="edge62">
+   <title>
+    NDC.NY-&gt;NDC.Northeast
+   </title>
+   <path d="M588.829,-2442.73C594.634,-2439.56 600.222,-2435.69 604.71,-2431 673.239,-2359.44 704.101,-2241.05 715.128,-2187.21" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="718.574,-2187.83 717.074,-2177.34 711.706,-2186.47 718.574,-2187.83" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.NE&#45;&gt;NDC.Midwest -->
+  <g class="edge" id="edge84">
+   <title>
+    NDC.NE-&gt;NDC.Midwest
+   </title>
+   <path d="M587.914,-1066.44C593.808,-1063.48 599.662,-1060 604.71,-1056 648.375,-1021.41 685.03,-966.954 704.695,-934.337" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="707.929,-935.744 710.012,-925.356 701.906,-932.177 707.929,-935.744" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.ND&#45;&gt;NDC.Midwest -->
+  <g class="edge" id="edge96">
+   <title>
+    NDC.ND-&gt;NDC.Midwest
+   </title>
+   <path d="M588.106,-1117.4C594.046,-1114.25 599.868,-1110.46 604.71,-1106 658.293,-1056.6 694.164,-976.528 710.352,-934.602" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="713.702,-935.64 713.954,-925.048 707.152,-933.17 713.702,-935.64" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.NC&#45;&gt;NDC.Southeast -->
+  <g class="edge" id="edge92">
+   <title>
+    NDC.NC-&gt;NDC.Southeast
+   </title>
+   <path d="M586.166,-1373.52C592.669,-1377.06 599.201,-1381.24 604.71,-1386 649.916,-1425.06 686.94,-1485.22 706.079,-1519.88" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="703.149,-1521.81 710.995,-1528.93 709.302,-1518.48 703.149,-1521.81" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.Southwest -->
+  <g class="node" id="node104">
+   <title>
+    NDC.Southwest
+   </title>
+   <polygon fill="#ffffcc" points="800.694,-570.544 800.694,-585.456 754.13,-596 688.279,-596 641.715,-585.456 641.715,-570.544 688.279,-560 754.13,-560 800.694,-570.544" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="middle" x="721.205" y="-574.3">
+    NDC.Southwest
+   </text>
+  </g>
+  <!-- NDC.NM&#45;&gt;NDC.Southwest -->
+  <g class="edge" id="edge58">
+   <title>
+    NDC.NM-&gt;NDC.Southwest
+   </title>
+   <path d="M594.08,-543.018C613.859,-548.504 638.186,-555.251 660.181,-561.352" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="659.526,-564.802 670.098,-564.102 661.397,-558.057 659.526,-564.802" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.NH&#45;&gt;NDC.Northeast -->
+  <g class="edge" id="edge105">
+   <title>
+    NDC.NH-&gt;NDC.Northeast
+   </title>
+   <path d="M588.529,-2391.43C594.363,-2388.29 600.038,-2384.5 604.71,-2380 662.689,-2324.12 697.388,-2232.77 712.028,-2186.99" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="715.457,-2187.75 715.085,-2177.16 708.773,-2185.67 715.457,-2187.75" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.NJ&#45;&gt;NDC.Northeast -->
+  <g class="edge" id="edge81">
+   <title>
+    NDC.NJ-&gt;NDC.Northeast
+   </title>
+   <path d="M587.869,-2340.84C593.832,-2337.83 599.722,-2334.22 604.71,-2330 653.022,-2289.09 689.667,-2223.18 707.733,-2186.28" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="710.957,-2187.65 712.126,-2177.12 704.646,-2184.62 710.957,-2187.65" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.WY&#45;&gt;NDC.West -->
+  <g class="edge" id="edge68">
+   <title>
+    NDC.WY-&gt;NDC.West
+   </title>
+   <path d="M604.115,-234.601C619.76,-236.676 637.291,-239.001 653.895,-241.204" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="653.715,-244.711 664.088,-242.556 654.635,-237.771 653.715,-244.711" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.WV&#45;&gt;NDC.Southeast -->
+  <g class="edge" id="edge69">
+   <title>
+    NDC.WV-&gt;NDC.Southeast
+   </title>
+   <path d="M579.695,-1310.4C588.31,-1316.77 597.558,-1324.57 604.71,-1333 654.762,-1392.02 692.351,-1476.24 709.663,-1519.31" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="706.499,-1520.83 713.431,-1528.84 713.009,-1518.25 706.499,-1520.83" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.WI&#45;&gt;NDC.Midwest -->
+  <g class="edge" id="edge99">
+   <title>
+    NDC.WI-&gt;NDC.Midwest
+   </title>
+   <path d="M586.496,-1015.96C592.707,-1012.98 599.041,-1009.62 604.71,-1006 638.354,-984.504 672.538,-953.872 694.892,-932.391" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="697.554,-934.684 702.285,-925.204 692.675,-929.665 697.554,-934.684" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.WA&#45;&gt;NDC.West -->
+  <g class="edge" id="edge93">
+   <title>
+    NDC.WA-&gt;NDC.West
+   </title>
+   <path d="M587.518,-303.603C612.802,-293.389 647.879,-279.218 675.617,-268.012" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="677.134,-271.175 685.095,-264.184 674.512,-264.684 677.134,-271.175" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.LA&#45;&gt;NDC.Southeast -->
+  <g class="edge" id="edge70">
+   <title>
+    NDC.LA-&gt;NDC.Southeast
+   </title>
+   <path d="M600.113,-1547C610.569,-1547 622.019,-1547 633.566,-1547" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="633.715,-1550.5 643.715,-1547 633.715,-1543.5 633.715,-1550.5" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.UT&#45;&gt;NDC.West -->
+  <g class="edge" id="edge80">
+   <title>
+    NDC.UT-&gt;NDC.West
+   </title>
+   <path d="M587.201,-149.898C593.164,-152.644 599.226,-155.716 604.71,-159 636.893,-178.275 670.185,-205.407 692.708,-225.024" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="690.679,-227.901 700.497,-231.883 695.305,-222.647 690.679,-227.901" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.CT&#45;&gt;NDC.Northeast -->
+  <g class="edge" id="edge73">
+   <title>
+    NDC.CT-&gt;NDC.Northeast
+   </title>
+   <path d="M594.08,-2126.3C613.609,-2131.36 637.573,-2137.58 659.348,-2143.22" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="658.617,-2146.65 669.175,-2145.77 660.373,-2139.87 658.617,-2146.65" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.CA&#45;&gt;NDC.West -->
+  <g class="edge" id="edge76">
+   <title>
+    NDC.CA-&gt;NDC.West
+   </title>
+   <path d="M586.726,-196.882C611.94,-206.916 647.236,-220.962 675.2,-232.09" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="674.171,-235.448 684.757,-235.894 676.76,-228.944 674.171,-235.448" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.CO&#45;&gt;NDC.West -->
+  <g class="edge" id="edge89">
+   <title>
+    NDC.CO-&gt;NDC.West
+   </title>
+   <path d="M579.231,-34.3893C587.898,-40.8115 597.3,-48.6445 604.71,-57 651.167,-109.382 689.205,-183.067 707.826,-222.516" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="704.743,-224.185 712.136,-231.774 711.089,-221.231 704.743,-224.185" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.West&#45;&gt;NDC.USA -->
+  <g class="edge" id="edge59">
+   <title>
+    NDC.West-&gt;NDC.USA
+   </title>
+   <path d="M727.028,-268.312C739.384,-315.261 773.14,-443.776 800.699,-551 832.067,-673.039 868.743,-818.822 883.836,-878.954" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="880.487,-879.987 886.315,-888.835 887.276,-878.284 880.487,-879.987" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.Northeast&#45;&gt;NDC.USA -->
+  <g class="edge" id="edge94">
+   <title>
+    NDC.Northeast-&gt;NDC.USA
+   </title>
+   <path d="M724.654,-2140.82C743.393,-2001.72 863.947,-1106.84 887.045,-935.379" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="890.528,-935.738 888.395,-925.361 883.591,-934.804 890.528,-935.738" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.SD&#45;&gt;NDC.Midwest -->
+  <g class="edge" id="edge61">
+   <title>
+    NDC.SD-&gt;NDC.Midwest
+   </title>
+   <path d="M579.358,-648.872C588.138,-655.294 597.58,-663.261 604.71,-672 658.409,-737.824 695.251,-832.766 711.234,-879.244" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="707.987,-880.568 714.5,-888.924 714.619,-878.33 707.987,-880.568" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.AZ&#45;&gt;NDC.Southwest -->
+  <g class="edge" id="edge63">
+   <title>
+    NDC.AZ-&gt;NDC.Southwest
+   </title>
+   <path d="M584.473,-494.636C591.21,-497.884 598.266,-501.444 604.71,-505 632.396,-520.277 662.565,-539.438 685.124,-554.295" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="683.412,-557.36 693.682,-559.965 687.279,-551.524 683.412,-557.36" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.AR&#45;&gt;NDC.Southeast -->
+  <g class="edge" id="edge87">
+   <title>
+    NDC.AR-&gt;NDC.Southeast
+   </title>
+   <path d="M587.337,-1679.16C593.348,-1676.2 599.393,-1672.8 604.71,-1669 643.034,-1641.6 678.974,-1600.21 700.282,-1573.39" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="703.262,-1575.26 706.671,-1565.23 697.751,-1570.95 703.262,-1575.26" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.AL&#45;&gt;NDC.Southeast -->
+  <g class="edge" id="edge72">
+   <title>
+    NDC.AL-&gt;NDC.Southeast
+   </title>
+   <path d="M585.864,-1629.11C592.189,-1626.28 598.726,-1623.17 604.71,-1620 632.643,-1605.18 662.802,-1586 685.294,-1571.02" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="687.47,-1573.77 693.823,-1565.3 683.569,-1567.96 687.47,-1573.77" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.VT&#45;&gt;NDC.Northeast -->
+  <g class="edge" id="edge54">
+   <title>
+    NDC.VT-&gt;NDC.Northeast
+   </title>
+   <path d="M586.116,-2239.96C592.359,-2237.17 598.801,-2234.11 604.71,-2231 632.58,-2216.32 662.741,-2197.41 685.251,-2182.65" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="687.372,-2185.44 693.787,-2177.01 683.514,-2179.6 687.372,-2185.44" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.VA&#45;&gt;NDC.Southeast -->
+  <g class="edge" id="edge60">
+   <title>
+    NDC.VA-&gt;NDC.Southeast
+   </title>
+   <path d="M588.274,-1780.58C594.199,-1777.41 599.973,-1773.57 604.71,-1769 662.966,-1712.75 697.618,-1620.71 712.154,-1574.83" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="715.507,-1575.83 715.109,-1565.25 708.818,-1573.77 715.507,-1575.83" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.OR&#45;&gt;NDC.West -->
+  <g class="edge" id="edge103">
+   <title>
+    NDC.OR-&gt;NDC.West
+   </title>
+   <path d="M586.957,-353.585C593.003,-350.687 599.158,-347.448 604.71,-344 637.321,-323.745 670.959,-295.361 693.46,-275.093" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="695.896,-277.609 700.935,-268.289 691.184,-272.432 695.896,-277.609" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.OK&#45;&gt;NDC.Southwest -->
+  <g class="edge" id="edge83">
+   <title>
+    NDC.OK-&gt;NDC.Southwest
+   </title>
+   <path d="M602.771,-578C611.783,-578 621.457,-578 631.244,-578" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="631.46,-581.5 641.46,-578 631.46,-574.5 631.46,-581.5" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.OH&#45;&gt;NDC.Midwest -->
+  <g class="edge" id="edge98">
+   <title>
+    NDC.OH-&gt;NDC.Midwest
+   </title>
+   <path d="M586.901,-712.576C593.214,-716.07 599.483,-720.218 604.71,-725 653.88,-769.986 690.531,-840.457 708.286,-879.187" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="705.299,-881.08 712.588,-888.768 711.685,-878.212 705.299,-881.08" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.TN&#45;&gt;NDC.Southeast -->
+  <g class="edge" id="edge91">
+   <title>
+    NDC.TN-&gt;NDC.Southeast
+   </title>
+   <path d="M586.008,-1473.25C592.259,-1476.03 598.733,-1479.02 604.71,-1482 630.593,-1494.9 658.899,-1510.8 681.011,-1523.64" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="679.375,-1526.74 689.775,-1528.76 682.906,-1520.7 679.375,-1526.74" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.FL&#45;&gt;NDC.Southeast -->
+  <g class="edge" id="edge85">
+   <title>
+    NDC.FL-&gt;NDC.Southeast
+   </title>
+   <path d="M587.879,-1729.85C593.84,-1726.84 599.728,-1723.23 604.71,-1719 653.16,-1677.86 689.753,-1611.56 707.773,-1574.44" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="711.021,-1575.76 712.154,-1565.23 704.699,-1572.75 711.021,-1575.76" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.ME&#45;&gt;NDC.Northeast -->
+  <g class="edge" id="edge65">
+   <title>
+    NDC.ME-&gt;NDC.Northeast
+   </title>
+   <path d="M603.666,-2159C613.507,-2159 624.108,-2159 634.765,-2159" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="634.976,-2162.5 644.976,-2159 634.976,-2155.5 634.976,-2162.5" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.MS&#45;&gt;NDC.Southeast -->
+  <g class="edge" id="edge86">
+   <title>
+    NDC.MS-&gt;NDC.Southeast
+   </title>
+   <path d="M588.552,-1425.95C594.135,-1428.62 599.719,-1431.65 604.71,-1435 641.177,-1459.47 676.415,-1496.13 698.178,-1520.77" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="695.818,-1523.39 705.024,-1528.64 701.097,-1518.8 695.818,-1523.39" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.MT&#45;&gt;NDC.West -->
+  <g class="edge" id="edge66">
+   <title>
+    NDC.MT-&gt;NDC.West
+   </title>
+   <path d="M588.388,-404.105C594.109,-401.21 599.781,-397.838 604.71,-394 647.515,-360.667 684.213,-308.448 704.162,-276.898" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="707.264,-278.538 709.57,-268.197 701.319,-274.843 707.264,-278.538" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.MA&#45;&gt;NDC.Northeast -->
+  <g class="edge" id="edge107">
+   <title>
+    NDC.MA-&gt;NDC.Northeast
+   </title>
+   <path d="M594.08,-2193.98C614.198,-2188.4 639.023,-2181.52 661.312,-2175.33" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="662.316,-2178.69 671.017,-2172.64 660.445,-2171.94 662.316,-2178.69" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.MD&#45;&gt;NDC.Northeast -->
+  <g class="edge" id="edge97">
+   <title>
+    NDC.MD-&gt;NDC.Northeast
+   </title>
+   <path d="M579.437,-1922.21C588.125,-1928.62 597.487,-1936.48 604.71,-1945 654.762,-2004.02 692.351,-2088.24 709.663,-2131.31" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="706.499,-2132.83 713.431,-2140.84 713.009,-2130.25 706.499,-2132.83" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.MI&#45;&gt;NDC.Midwest -->
+  <g class="edge" id="edge55">
+   <title>
+    NDC.MI-&gt;NDC.Midwest
+   </title>
+   <path d="M586.328,-811.655C592.553,-814.483 598.934,-817.647 604.71,-821 635.904,-839.109 668.622,-864.123 691.238,-882.506" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="689.142,-885.314 699.092,-888.954 693.584,-879.904 689.142,-885.314" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.TX&#45;&gt;NDC.Southwest -->
+  <g class="edge" id="edge56">
+   <title>
+    NDC.TX-&gt;NDC.Southwest
+   </title>
+   <path d="M590.265,-1220.56C595.857,-1217.32 601,-1213.21 604.71,-1208 647.281,-1148.27 628.339,-952.122 641.71,-880 660.688,-777.631 695.411,-658.759 711.542,-605.857" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="714.924,-606.768 714.51,-596.181 708.231,-604.715 714.924,-606.768" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.MN&#45;&gt;NDC.Midwest -->
+  <g class="edge" id="edge104">
+   <title>
+    NDC.MN-&gt;NDC.Midwest
+   </title>
+   <path d="M589.069,-764.719C594.533,-767.4 599.944,-770.497 604.71,-774 645.576,-804.036 681.965,-850.973 702.526,-880.308" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="699.829,-882.562 708.387,-888.808 705.592,-878.589 699.829,-882.562" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.MO&#45;&gt;NDC.Midwest -->
+  <g class="edge" id="edge82">
+   <title>
+    NDC.MO-&gt;NDC.Midwest
+   </title>
+   <path d="M589.491,-1168.19C595.028,-1165.11 600.354,-1161.41 604.71,-1157 668.709,-1092.23 701.406,-985.463 713.954,-935.037" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="717.392,-935.708 716.33,-925.167 710.587,-934.07 717.392,-935.708" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.SC&#45;&gt;NDC.Southeast -->
+  <g class="edge" id="edge64">
+   <title>
+    NDC.SC-&gt;NDC.Southeast
+   </title>
+   <path d="M592.821,-1582.33C612.993,-1576.74 638.148,-1569.76 660.764,-1563.49" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="661.912,-1566.8 670.613,-1560.75 660.041,-1560.05 661.912,-1566.8" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.Midwest&#45;&gt;NDC.USA -->
+  <g class="edge" id="edge79">
+   <title>
+    NDC.Midwest-&gt;NDC.USA
+   </title>
+   <path d="M791.78,-907C803.641,-907 815.904,-907 827.591,-907" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="827.688,-910.5 837.688,-907 827.688,-903.5 827.688,-910.5" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.RI&#45;&gt;NDC.Northeast -->
+  <g class="edge" id="edge100">
+   <title>
+    NDC.RI-&gt;NDC.Northeast
+   </title>
+   <path d="M585.999,-2290.78C592.443,-2287.69 598.994,-2284.07 604.71,-2280 642.925,-2252.8 678.893,-2211.76 700.238,-2185.16" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="703.178,-2187.09 706.638,-2177.07 697.689,-2182.74 703.178,-2187.09" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.Southwest&#45;&gt;NDC.USA -->
+  <g class="edge" id="edge102">
+   <title>
+    NDC.Southwest-&gt;NDC.USA
+   </title>
+   <path d="M731.513,-596.157C759.561,-650.869 843.387,-814.382 876.848,-879.652" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="873.912,-881.597 881.589,-888.899 880.141,-878.404 873.912,-881.597" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.DE&#45;&gt;NDC.Northeast -->
+  <g class="edge" id="edge78">
+   <title>
+    NDC.DE-&gt;NDC.Northeast
+   </title>
+   <path d="M585.903,-1985.38C592.492,-1988.95 599.126,-1993.18 604.71,-1998 649.916,-2037.06 686.94,-2097.22 706.079,-2131.88" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="703.149,-2133.81 710.995,-2140.93 709.302,-2130.48 703.149,-2133.81" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.DC&#45;&gt;NDC.Northeast -->
+  <g class="edge" id="edge67">
+   <title>
+    NDC.DC-&gt;NDC.Northeast
+   </title>
+   <path d="M588.02,-2037.7C593.78,-2040.43 599.561,-2043.54 604.71,-2047 641.177,-2071.47 676.415,-2108.13 698.178,-2132.77" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="695.818,-2135.39 705.024,-2140.64 701.097,-2130.8 695.818,-2135.39" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.KY&#45;&gt;NDC.Southeast -->
+  <g class="edge" id="edge90">
+   <title>
+    NDC.KY-&gt;NDC.Southeast
+   </title>
+   <path d="M588.834,-1831.74C594.639,-1828.57 600.225,-1824.69 604.71,-1820 673.572,-1748 704.332,-1628.77 715.237,-1574.92" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="718.682,-1575.54 717.159,-1565.06 711.811,-1574.21 718.682,-1575.54" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- NDC.KS&#45;&gt;NDC.Midwest -->
+  <g class="edge" id="edge77">
+   <title>
+    NDC.KS-&gt;NDC.Midwest
+   </title>
+   <path d="M587.518,-855.798C611.429,-865.024 644.097,-877.631 671.035,-888.026" fill="none" stroke="#000000">
+   </path>
+   <polygon fill="#000000" points="670.084,-891.41 680.674,-891.745 672.604,-884.88 670.084,-891.41" stroke="#000000">
+   </polygon>
+  </g>
+  <!-- Legend -->
+  <g class="node" id="node110">
+   <title>
+    Legend
+   </title>
+   <polygon fill="white" points="109,-1184.5 0,-1184.5 0,-1009.5 109,-1009.5 109,-1184.5" stroke="black">
+   </polygon>
+   <polygon fill="none" points="0.5,-1159 0.5,-1184 109.5,-1184 109.5,-1159 0.5,-1159" stroke="black">
+   </polygon>
+   <text font-family="Arial Black" font-size="14.00" text-anchor="start" x="30.5" y="-1167.8">
+    Nodes
+   </text>
+   <polygon fill="#ccffcc" points="0.5,-1134 0.5,-1159 83.5,-1159 83.5,-1134 0.5,-1134" stroke="none">
+   </polygon>
+   <polygon fill="none" points="0.5,-1134 0.5,-1159 83.5,-1159 83.5,-1134 0.5,-1134" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="27.5" y="-1142.8">
+    CEN
+   </text>
+   <polygon fill="none" points="83.5,-1134 83.5,-1159 109.5,-1159 109.5,-1134 83.5,-1134" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="88.5" y="-1142.8">
+    54
+   </text>
+   <polygon fill="#ffffcc" points="0.5,-1109 0.5,-1134 83.5,-1134 83.5,-1109 0.5,-1109" stroke="none">
+   </polygon>
+   <polygon fill="none" points="0.5,-1109 0.5,-1134 83.5,-1134 83.5,-1109 0.5,-1109" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="27" y="-1117.8">
+    NDC
+   </text>
+   <polygon fill="none" points="83.5,-1109 83.5,-1134 109.5,-1134 109.5,-1109 83.5,-1109" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="88.5" y="-1117.8">
+    55
+   </text>
+   <polygon fill="none" points="0.5,-1084 0.5,-1109 109.5,-1109 109.5,-1084 0.5,-1084" stroke="black">
+   </polygon>
+   <text font-family="Arial Black" font-size="14.00" text-anchor="start" x="29" y="-1092.8">
+    Edges
+   </text>
+   <polygon fill="none" points="0.5,-1059 0.5,-1084 83.5,-1084 83.5,-1059 0.5,-1059" stroke="black">
+   </polygon>
+   <text fill="#000000" font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="8.5" y="-1067.8">
+    is_a (CEN)
+   </text>
+   <polygon fill="none" points="83.5,-1059 83.5,-1084 109.5,-1084 109.5,-1059 83.5,-1059" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="88.5" y="-1067.8">
+    53
+   </text>
+   <polygon fill="none" points="0.5,-1034 0.5,-1059 83.5,-1059 83.5,-1034 0.5,-1034" stroke="black">
+   </polygon>
+   <text fill="#000000" font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="8.5" y="-1042.8">
+    is_a (NDC)
+   </text>
+   <polygon fill="none" points="83.5,-1034 83.5,-1059 109.5,-1059 109.5,-1034 83.5,-1034" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="88.5" y="-1042.8">
+    54
+   </text>
+   <polygon fill="none" points="0.5,-1009 0.5,-1034 83.5,-1034 83.5,-1009 0.5,-1009" stroke="black">
+   </polygon>
+   <text fill="#aa00ff" font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="5.5" y="-1017.8">
+    articulations
+   </text>
+   <polygon fill="none" points="83.5,-1009 83.5,-1034 109.5,-1034 109.5,-1009 83.5,-1009" stroke="black">
+   </polygon>
+   <text font-family="Helvetica,sans-Serif" font-size="14.00" text-anchor="start" x="88.5" y="-1017.8">
+    49
+   </text>
+  </g>
+ </g>
+</svg>
+    </div>
+    <div class="tab-pane fade" id="adjacency1x1">
+     <button id="zoomin">
+      Zoom in
+     </button>
+     <button id="zoomout">
+      Zoom out
+     </button>
+     <button id="reset">
+      Reset
+     </button>
+    </div>
+    <div class="tab-pane fade" id="adjacency">
+     <button id="zoomin">
+      Zoom in
+     </button>
+     <button id="zoomout">
+      Zoom out
+     </button>
+     <button id="reset">
+      Reset
+     </button>
+    </div>
+   </div>
+  </div>
+  <script id="visualization">
+   createVisualization();
+function createVisualization() {
+	var size = {
+	  width: document.body.clientWidth || window.innerWidth,
+	  height: document.body.clientHeight || window.innerHeight
+	}
+
+	var oldSvg = d3.select("div#visualization svg")
+	var graphG = d3.select("div#visualization svg g.graph");
+	oldSvg.remove();
+
+	var margin = {top: 0, right: 0, bottom: 0, left: 0},
+		width = size['width'] - margin.left - margin.right,
+		height = size['height'] - 1 - margin.top - margin.bottom;
+
+	var x = d3.scale.linear()
+		.domain([-width / 2, width / 2])
+		.range([0, width]);
+
+	var y = d3.scale.linear()
+		.domain([-height / 2, height / 2])
+		.range([height, 0]);
+
+	var zoom = d3.behavior.zoom()
+		.x(x)
+		.y(y)
+		.scaleExtent([0.1, 32])
+		.on("zoom", zoom);
+
+	var svg = d3.select("#visualization").append("svg")
+		.attr("width", width + margin.left + margin.right)
+		.attr("height", height + margin.top + margin.bottom)
+		.append("g")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+		.call(zoom)
+		.append(function() {
+			return graphG.node();
+		});
+
+	function zoom() {
+		x = d3.event.translate[0]
+		y = d3.event.translate[1]
+		graphG.attr("transform", "translate(" + d3.event.translate + ") scale(" + d3.event.scale + ")");
+	}
+
+
+	d3.select("div#visualization button#reset").on("click", reset);
+	d3.select("div#visualization button#zoomin").on("click", zoomIn);
+	d3.select("div#visualization button#zoomout").on("click", zoomOut);
+
+	var originalWidth = Number(oldSvg.attr("width").slice(0, -2));
+	var originalHeight = Number(oldSvg.attr("width").slice(0, -2));
+	initialScale = Math.min(width/originalWidth, height/originalHeight) * 0.7
+	var t = d3.transform(graphG.attr("transform")),
+			initialX = (size['width'] - (initialScale * originalWidth))/2, //t.translate[0],
+			initialY = size['height'] * 0.8, //t.translate[1],
+			initialS = initialScale; //t.scale[0];
+			
+	function zoomIn() {
+		var t = d3.transform(graphG.attr("transform")),
+			x = t.translate[0],
+			y = t.translate[1],
+			s = t.scale[0];
+		var newScale = (s + 0.1);
+		zoom.scale(newScale)
+		graphG.attr("transform", "translate(" + x + " ," + y + ") scale(" + newScale + ")");
+	}
+
+	function zoomOut() {
+		var t = d3.transform(graphG.attr("transform")),
+			x = t.translate[0],
+			y = t.translate[1],
+			s = t.scale[0];
+		var newScale = (s - 0.1);
+		zoom.scale(newScale)
+		graphG.attr("transform", "translate(" + x + " ," + y + ") scale(" + newScale + ")");
+	}
+
+	function reset() {
+		initialTranslate = [initialX, initialY];
+		zoom.translate(initialTranslate);
+		zoom.scale(initialS)
+		graphG.attr("transform", "translate(" + initialX + " ," + initialY + ") scale(" + initialS + ")");
+	}
+
+	reset(); //removes the random jump after first click issue
+}
+  </script>
+  <script id="adjacency1x1">
+   createAdjacency1x1Matrix();
+  function createAdjacency1x1Matrix() {
+  	var size = {
+  	  width: document.body.clientWidth || window.innerWidth,
+  	  height: document.body.clientHeight || window.innerHeight
+  	}
+
+  	var margin = {top: 0, right: 0, bottom: 0, left: 0},
+  		width = size['width'] - margin.left - margin.right,
+  		height = size['height'] - 1 - margin.top - margin.bottom;
+
+  	var x = d3.scale.linear()
+  		.domain([-width / 2, width / 2])
+  		.range([0, width]);
+
+  	var y = d3.scale.linear()
+  		.domain([-height / 2, height / 2])
+  		.range([height, 0]);
+
+  	var zoom = d3.behavior.zoom()
+  		.x(x)
+  		.y(y)
+  		.scaleExtent([0.1, 32])
+  		.on("zoom", zoom);
+
+  	var canvas = d3.select("#adjacency1x1").append("svg")
+  		.attr("width", width + margin.left + margin.right)
+  		.attr("height", height + margin.top + margin.bottom)
+  		.append("g")
+  		.attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+  		.call(zoom);
+
+  	var content = canvas.append("g");
+  		
+  	var cellWidth = 25;
+
+  	var data = JSON.parse(document.getElementById('dataAdjacency1x1').innerHTML);
+
+  	/*var i = data['links'].length
+  	while (i--) {
+  		l = data['links'][i];
+  		if (l.relation.startsWith("taxonomy")) {
+  			data['links'].splice(i, 1);
+  		}
+  	}*/
+
+  	//sort nodes
+  	dataNodesA = []
+   	dataNodesB = []
+  	collectedNodes = {}
+  	for (i in data['links']) {
+  		l = data['links'][i];
+  		dataNodesA.push(data['nodes'][l.source]);
+   		dataNodesB.push(data['nodes'][l.target]);
+  		collectedNodes[data['nodes'][l.source].id] = [];
+  		collectedNodes[data['nodes'][l.target].id] = [];
+     		l.source = data['nodes'][l.source].id;
+     		l.target = data['nodes'][l.target].id;
+  	}
+  	dataNodesA = dataNodesA.filter(function(item, pos) {
+   		return dataNodesA.indexOf(item) == pos;
+   	});
+   	dataNodesB = dataNodesB.filter(function(item, pos) {
+   		return dataNodesB.indexOf(item) == pos;
+   	});
+  	for (i in data['nodes']) {
+  		n = data['nodes'][i];
+  		if (!(n.id in collectedNodes)) {
+  			if (data['links'].length == 0) {
+  				if (dataNodesA.length == 0) {
+  					dataNodesA.push(n)
+  				} else if (dataNodesA[0].group = n.group) {
+  					dataNodesA.push(n);
+  				} else {
+  					dataNodesB.push(n);
+  				}
+  			} else {
+  				if(dataNodesA[0].group == n.group) {
+  					dataNodesA.push(n);
+  				}
+  				if(dataNodesB[0].group == n.group) {
+  					dataNodesB.push(n);
+  				}
+  			}
+  			collectedNodes[n.id] = []
+  		}
+  	}
+  	
+  	data['nodes'] = data['nodes'].sort(function(a, b) { 
+  										return d3.ascending(a.id, b.id); 
+  								});
+  		
+  	groupNodes = { }
+  	for (i in data['nodes']) {
+  		n = data['nodes'][i];
+  		id = n.group;
+  		if (id in groupNodes) {
+  			groupNodes[id].push(n);
+  		} else {
+  			groupNodes[id] = [];
+  			groupNodes[id].push(n);
+  		}
+  	}
+  	if(Object.keys(groupNodes).length != 2) {
+  		return;
+  	}
+  						
+  	//sort links for legend
+  	data['links'] = data['links'].sort(function(a, b) { 
+  									if(a.relation.startsWith("taxonomy") && b.relation.startsWith("taxonomy")) {
+  										idA = a.relation.split(".")[1];
+  										idB = b.relation.split(".")[1];
+  										if (idA == idB) {
+  											return d3.ascending(a.relation, b.relation);
+  										}
+  										return d3.ascending(idA, idB);
+  									}
+  									return d3.ascending(a.relation, b.relation); 
+  								});
+  	for (i in data['links']) {
+  		l = data['links'][i];
+  		l.source = dataNodesA.map(function (n) {
+  										return n.id;
+  									}).indexOf(l.source)
+  		l.target = dataNodesB.map(function (n) {
+  										return n.id;
+  									}).indexOf(l.target)
+  	}
+
+  	var linksMap = { };
+  	for (i in data['links']) {
+  		var l = data['links'][i];
+  		linksMap[l.source + ";" + l.target] = l;
+  	}
+  	var cells = [];
+  	for (i in dataNodesA) {
+  		for (j in dataNodesB) {
+  			var id = i + ";" + j;
+  			cells.push({ 
+  						id: id,
+  						source: i, 
+  						target: j, 
+  						relation: id in linksMap ? linksMap[id].relation : ""
+  					});
+  		}
+  	}
+  	/*
+  	c20 = d3.scale.category20();
+  	colorIndex = 0;
+  	var colors = { 
+  			"" : "white",
+  			"equals" : c20(colorIndex++),
+  			"disjoint" : c20(colorIndex++),
+  			"includes" : c20(colorIndex++),
+  			"is_included_in" : c20(colorIndex++),
+  			"overlaps" : c20(colorIndex++)
+  	}
+  	*/
+
+  	var colors = {
+  		"" : "white",
+  		"equals" : "#7f7f7f", //dark gray
+  		"disjoint" : "#c7c7c7", //light gray
+  		"includes" : "#e6550d", //dark orange
+  		"is_included_in" : "#fd8d3c", //light orange
+  		"overlaps" : "#d62728" //red
+  	}
+
+  	//var taxonomyPairColors = ["#393b79", "#5254a3", "#637939", "#8ca252", "#8c6d31", "#bd9e39", "#843c39", "#ad494a", "#7b4173", "#a55194"];
+  	//colorIndex = 0;
+  	for (i in data['links']) {
+  		var l = data['links'][i];
+  		/*if (!(l.relation in colors)) {
+  			colors[l.relation] = taxonomyPairColors[colorIndex];
+  			colorIndex = colorIndex + 1 % 4;
+  		}*/
+  		cells.push({ 
+  					id: l.source + ";" + l.target, 
+  					source: l.source, 
+  					target: l.target, 
+  					relation: l.relation 
+  				});
+  	}
+
+  	var x = d3.scale.linear()
+  		.domain([-width / 2, width / 2])
+  		.range([0, width]);
+
+  	var y = d3.scale.linear()
+  		.domain([-height / 2, height / 2])
+  		.range([height, 0]);
+
+  	adjacencyView = content.append("g")
+  			  .attr("transform", "translate(90,90)");
+  			adjacencyView.selectAll("rect")
+  			  .data(cells)
+  			  .enter()
+  			  .append("rect")
+  			  .attr("width", cellWidth)
+  			  .attr("height", cellWidth)
+  			  .attr("x", function (d) {return d.target * cellWidth})
+  			  .attr("y", function (d) {return d.source * cellWidth})
+  			  .style("fill", function(d) { return colors[d.relation]; })
+  			  .style("stroke", "black")
+  			  .on("mouseover", mouseover)
+  			  .on("mouseout", mouseout);
+  			
+  	var matrixScaleA = d3.scale.ordinal()
+  						.domain(dataNodesA.map(function (n) {
+  											return n.id
+  										}))
+  						.rangePoints([0, dataNodesA.length * cellWidth], 1);
+  	var matrixScaleB = d3.scale.ordinal()
+  						.domain(dataNodesB.map(function (n) {
+  											return n.id
+  										}))
+  						.rangePoints([0, dataNodesB.length * cellWidth], 1);						
+  	/*tickValues = []
+  	for (i = 0; i < data['nodes'].length - 2; i++) { 
+  		tickValues.push(i * cellWidth + 0.5 * cellWidth)
+  	}*/
+  	/*for (i in data['nodes']) {
+  		console.log(i);
+  		console.log(i * cellWidth);
+  		console.log(i * cellWidth - 0.5 * cellWidth);
+  		tickValues.push(i * cellWidth - 0.5 * cellWidth)
+  		
+  	}
+  	console.log(tickValues);*/
+  	xAxis = d3.svg.axis()
+  				.scale(matrixScaleB)
+  				//.tickValues(tickValues)
+  				.orient("top")
+  				.tickSize(0); 
+  	yAxis = d3.svg.axis()
+  				.scale(matrixScaleA)
+  				//.tickValues(tickValues)
+  				.orient("left")
+  				.tickSize(0);    
+  	adjacencyView.append("g")
+  				.call(xAxis)
+  				.selectAll("text")
+  				.style("text-anchor", "end")
+  				.attr("transform", "translate(-8,-10) rotate(90)");
+  	adjacencyView.append("g")
+  				.call(yAxis)
+  				.attr("transform", "translate(-10, 0)");
+  	  
+  	function mouseover(d, i) {
+  		d3.selectAll("div#adjacency1x1 rect")
+  			/*.style("stroke", function(o) {
+  				return (o.source == d.source || o.target == d.target) ? "black" : "gray";
+  			})*/
+  			.style("stroke-width", function(o) {
+  				return (o.source == d.source || o.target == d.target) ? "3px" : "1px";
+  			});
+  		d3.selectAll("div#adjacency1x1 g#legend g text").classed("activeLegend", function(c, i) { 
+  													return c == d.relation;
+  												});
+  		d3.selectAll("div#adjacency1x1 g.tick text").classed("activeTick", function(c, i) {
+  													return dataNodesA[d.source].id == c || dataNodesB[d.target].id == c;
+  												});
+  	}
+
+  	function mouseout() {
+  		d3.selectAll("div#adjacency1x1 rect").style("stroke-width", "1px");
+  		d3.selectAll("div#adjacency1x1 legend g text").classed("activeLegend", false);
+  		d3.selectAll("div#adjacency1x1 g.tick text").classed("activeTick", false);
+  	}
+
+  	content.append("g").append("text").text("From").style("font-weight", "bold").attr("transform", "translate(5, 70)");
+  	content.append("g").append("text").text("To").style("font-weight", "bold").attr("transform", "translate(60, 30)");
+
+  	legend = []
+  	for (c in colors) {
+  		if (c != "") { 
+  			legend.push(c);
+  		}
+  	}
+  	adjacencyViewLegend = content.append("g")
+  		.attr("transform", "translate(" + (((dataNodesA.length + dataNodesB.length) * cellWidth) + 150) + ", 80)")
+  		.attr("id", "legend");
+  	legendGs = adjacencyViewLegend.selectAll("g")
+  	  .data(legend);
+  	legendG = legendGs.enter()
+  	  .append("g")
+  	legendG.append("rect")
+  	  .attr("width", cellWidth)
+  	  .attr("height", cellWidth)
+  	  .attr("x", function (d, i) {return 0; })
+  	  .attr("y", function (d, i) {return i * cellWidth})
+  	  .style("fill", function(d) { return colors[d]; })
+  	  .style("stroke", "black");
+  	legendG.append("text")
+  	  .text(function(d) { return d; })
+  	  .attr("x", function (d, i) { return 40; })
+  	  .attr("y", function (d, i) { return (i * (cellWidth)) + 18; });	
+
+  	function zoom() {
+  		x = d3.event.translate[0]
+  		y = d3.event.translate[1]
+  		content.attr("transform", "translate(" + d3.event.translate + ") scale(" + d3.event.scale + ")");
+  	}
+
+  	d3.select("div#adjacency1x1 button#reset").on("click", reset);
+  	d3.select("div#adjacency1x1 button#zoomin").on("click", zoomIn);
+  	d3.select("div#adjacency1x1 button#zoomout").on("click", zoomOut);
+
+
+  	var originalWidth = dataNodesB.length * cellWidth + 100;
+  	var originalHeight = dataNodesA.length * cellWidth + 100;
+  	initialScale = Math.min(width/originalWidth, height/originalHeight) * 0.7
+  	var t = d3.transform(canvas.attr("transform")),
+  			initialX = (size['width'] - (initialScale * originalWidth))/2, //t.translate[0],
+  			initialY = 20, //t.translate[1],
+  			initialS = initialScale; //t.scale[0];
+
+  	function zoomIn() {
+  		var t = d3.transform(content.attr("transform")),
+  			x = t.translate[0],
+  			y = t.translate[1],
+  			s = t.scale[0];
+  		var newScale = (s + 0.1);
+  		zoom.scale(newScale)
+  		content.attr("transform", "translate(" + x + " ," + y + ") scale(" + newScale + ")");
+  	}
+
+  	function zoomOut() {
+  		var t = d3.transform(content.attr("transform")),
+  			x = t.translate[0],
+  			y = t.translate[1],
+  			s = t.scale[0];
+  		var newScale = (s - 0.1);
+  		zoom.scale(newScale)
+  		content.attr("transform", "translate(" + x + " ," + y + ") scale(" + newScale + ")");
+  	}
+
+  	function reset() {
+  		initialTranslate = [initialX, initialY];
+  		zoom.translate(initialTranslate);
+  		zoom.scale(initialS)
+  		content.attr("transform", "translate(" + initialX + " ," + initialY + ") scale(" + initialS + ")");
+  	}
+
+  	reset(); //removes the random jump after first click issue
+  }
+  </script>
+  <script id="adjacency">
+   createAdjacencyMatrix();
+function createAdjacencyMatrix() {
+	var size = {
+	  width: document.body.clientWidth || window.innerWidth,
+	  height: document.body.clientHeight || window.innerHeight
+	}
+
+	var margin = {top: 0, right: 0, bottom: 0, left: 0},
+		width = size['width'] - margin.left - margin.right,
+		height = size['height'] - 1 - margin.top - margin.bottom;
+
+	var x = d3.scale.linear()
+		.domain([-width / 2, width / 2])
+		.range([0, width]);
+
+	var y = d3.scale.linear()
+		.domain([-height / 2, height / 2])
+		.range([height, 0]);
+
+	var zoom = d3.behavior.zoom()
+		.x(x)
+		.y(y)
+		.scaleExtent([0.1, 32])
+		.on("zoom", zoom);
+
+	var canvas = d3.select("#adjacency").append("svg")
+		.attr("width", width + margin.left + margin.right)
+		.attr("height", height + margin.top + margin.bottom)
+		.append("g")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+		.call(zoom);
+
+	var content = canvas.append("g");
+		
+	var cellWidth = 25;
+
+	var data = JSON.parse(document.getElementById('dataAdjacency').innerHTML);
+
+	//sort nodes
+	for (i in data['links']) {
+		l = data['links'][i];
+		l.source = data['nodes'][l.source].id
+		l.target = data['nodes'][l.target].id
+	}
+	data['nodes'] = data['nodes'].sort(function(a, b) { 
+										return d3.ascending(a.id, b.id); 
+									});
+	//sort links for legend
+	data['links'] = data['links'].sort(function(a, b) { 
+									if(a.relation.startsWith("taxonomy") && b.relation.startsWith("taxonomy")) {
+										idA = a.relation.split(".")[1];
+										idB = b.relation.split(".")[1];
+										if (idA == idB) {
+											return d3.ascending(a.relation, b.relation);
+										}
+										return d3.ascending(idA, idB);
+									}
+									return d3.ascending(a.relation, b.relation); 
+								});
+	for (i in data['links']) {
+		l = data['links'][i];
+		l.source = data['nodes'].map(function (n) {
+										return n.id;
+									}).indexOf(l.source)
+		l.target = data['nodes'].map(function (n) {
+										return n.id;
+									}).indexOf(l.target)
+	}
+
+	var linksMap = { };
+	for (i in data['links']) {
+		var l = data['links'][i];
+		linksMap[l.source + ";" + l.target] = l;
+	}
+	var cells = [];
+	for (i in data['nodes']) {
+		for (j in data['nodes']) {
+			var id = i + ";" + j;
+			cells.push({ 
+						id: id,
+						source: i, 
+						target: j, 
+						relation: id in linksMap ? linksMap[id].relation : ""
+					});
+		}
+	}
+	/*
+	c20 = d3.scale.category20();
+	colorIndex = 0;
+	var colors = { 
+			"" : "white",
+			"equals" : c20(colorIndex++),
+			"disjoint" : c20(colorIndex++),
+			"includes" : c20(colorIndex++),
+			"is_included_in" : c20(colorIndex++),
+			"overlaps" : c20(colorIndex++)
+	}
+	*/
+
+	var colors = {
+		"" : "white",
+		"equals" : "#7f7f7f", //dark gray
+		"disjoint" : "#c7c7c7", //light gray
+		"includes" : "#e6550d", //dark orange
+		"is_included_in" : "#fd8d3c", //light orange
+		"overlaps" : "#d62728" //red
+	}
+
+	var taxonomyPairColors = ["#393b79", "#5254a3", "#637939", "#8ca252", "#8c6d31", "#bd9e39", "#843c39", "#ad494a", "#7b4173", "#a55194"];
+	colorIndex = 0;
+	for (i in data['links']) {
+		var l = data['links'][i];
+		if (!(l.relation in colors)) {
+			colors[l.relation] = taxonomyPairColors[colorIndex];
+			colorIndex = colorIndex + 1 % 4;
+		}
+		cells.push({ 
+					id: l.source + ";" + l.target, 
+					source: l.source, 
+					target: l.target, 
+					relation: l.relation 
+				});
+	}
+
+	var x = d3.scale.linear()
+		.domain([-width / 2, width / 2])
+		.range([0, width]);
+
+	var y = d3.scale.linear()
+		.domain([-height / 2, height / 2])
+		.range([height, 0]);
+
+	adjacencyView = content.append("g")
+			  .attr("transform", "translate(90,90)");
+			adjacencyView.selectAll("rect")
+			  .data(cells)
+			  .enter()
+			  .append("rect")
+			  .attr("width", cellWidth)
+			  .attr("height", cellWidth)
+			  .attr("x", function (d) {return d.target * cellWidth})
+			  .attr("y", function (d) {return d.source * cellWidth})
+			  .style("fill", function(d) { return colors[d.relation]; })
+			  .style("stroke", "black")
+			  .on("mouseover", mouseover)
+			  .on("mouseout", mouseout);
+			
+	var matrixScale = d3.scale.ordinal()
+						.domain(data['nodes'].map(function (n) {
+											return n.id
+										}))
+						.rangePoints([0, data['nodes'].length * cellWidth], 1);
+						
+	/*tickValues = []
+	for (i = 0; i < data['nodes'].length - 2; i++) { 
+		tickValues.push(i * cellWidth + 0.5 * cellWidth)
+	}*/
+	/*for (i in data['nodes']) {
+		console.log(i);
+		console.log(i * cellWidth);
+		console.log(i * cellWidth - 0.5 * cellWidth);
+		tickValues.push(i * cellWidth - 0.5 * cellWidth)
+		
+	}
+	console.log(tickValues);*/
+	xAxis = d3.svg.axis()
+				.scale(matrixScale)
+				//.tickValues(tickValues)
+				.orient("top")
+				.tickSize(0); 
+	yAxis = d3.svg.axis()
+				.scale(matrixScale)
+				//.tickValues(tickValues)
+				.orient("left")
+				.tickSize(0);    
+	adjacencyView.append("g")
+				.call(xAxis)
+				.selectAll("text")
+				.style("text-anchor", "end")
+				.attr("transform", "translate(-8,-10) rotate(90)");
+	adjacencyView.append("g")
+				.call(yAxis)
+				.attr("transform", "translate(-10, -10)");
+	  
+	function mouseover(d, i) {
+		d3.selectAll("div#adjacency rect")
+			/*.style("stroke", function(o) {
+				return (o.source == d.source || o.target == d.target) ? "black" : "gray";
+			})*/
+			.style("stroke-width", function(o) {
+				return (o.source == d.source || o.target == d.target) ? "3px" : "1px";
+			});
+		d3.selectAll("div#adjacency g#legend g text").classed("activeLegend", function(c, i) { 
+													return c == d.relation;
+												});
+		d3.selectAll("div#adjacency g.tick text").classed("activeTick", function(c, i) {
+													return data['nodes'][d.source].id == c || data['nodes'][d.target].id == c;
+												});
+	}
+
+	function mouseout() {
+		d3.selectAll("div#adjacency rect").style("stroke-width", "1px");
+		d3.selectAll("div#adjacency legend g text").classed("activeLegend", false);
+		d3.selectAll("div#adjacency g.tick text").classed("activeTick", false);
+	}
+
+	content.append("g").append("text").text("From").style("font-weight", "bold").attr("transform", "translate(5, 70)");
+	content.append("g").append("text").text("To").style("font-weight", "bold").attr("transform", "translate(60, 30)");
+
+	legend = []
+	for (c in colors) {
+		if (c != "") { 
+			legend.push(c);
+		}
+	}
+	adjacencyViewLegend = content.append("g")
+		.attr("transform", "translate(" + ((data['nodes'].length * cellWidth) + 150) + ", 80)")
+		.attr("id", "legend");
+	legendGs = adjacencyViewLegend.selectAll("g")
+	  .data(legend);
+	legendG = legendGs.enter()
+	  .append("g")
+	legendG.append("rect")
+	  .attr("width", cellWidth)
+	  .attr("height", cellWidth)
+	  .attr("x", function (d, i) {return 0; })
+	  .attr("y", function (d, i) {return i * cellWidth})
+	  .style("fill", function(d) { return colors[d]; })
+	  .style("stroke", "black");
+	legendG.append("text")
+	  .text(function(d) { return d; })
+	  .attr("x", function (d, i) { return 40; })
+	  .attr("y", function (d, i) { return (i * (cellWidth)) + 18; });	
+
+	function zoom() {
+		x = d3.event.translate[0]
+		y = d3.event.translate[1]
+		content.attr("transform", "translate(" + d3.event.translate + ") scale(" + d3.event.scale + ")");
+	}
+
+	d3.select("div#adjacency button#reset").on("click", reset);
+	d3.select("div#adjacency button#zoomin").on("click", zoomIn);
+	d3.select("div#adjacency button#zoomout").on("click", zoomOut);
+
+
+	var originalWidth = data['nodes'].length * cellWidth + 100;
+	var originalHeight = data['nodes'].length * cellWidth + 100;
+	initialScale = Math.min(width/originalWidth, height/originalHeight) * 0.7
+	var t = d3.transform(canvas.attr("transform")),
+			initialX = (size['width'] - (initialScale * originalWidth))/2, //t.translate[0],
+			initialY = 20, //t.translate[1],
+			initialS = initialScale; //t.scale[0];
+
+	function zoomIn() {
+		var t = d3.transform(content.attr("transform")),
+			x = t.translate[0],
+			y = t.translate[1],
+			s = t.scale[0];
+		var newScale = (s + 0.1);
+		zoom.scale(newScale)
+		content.attr("transform", "translate(" + x + " ," + y + ") scale(" + newScale + ")");
+	}
+
+	function zoomOut() {
+		var t = d3.transform(content.attr("transform")),
+			x = t.translate[0],
+			y = t.translate[1],
+			s = t.scale[0];
+		var newScale = (s - 0.1);
+		zoom.scale(newScale)
+		content.attr("transform", "translate(" + x + " ," + y + ") scale(" + newScale + ")");
+	}
+
+	function reset() {
+		initialTranslate = [initialX, initialY];
+		zoom.translate(initialTranslate);
+		zoom.scale(initialS)
+		content.attr("transform", "translate(" + initialX + " ," + initialY + ") scale(" + initialS + ")");
+	}
+
+	reset(); //removes the random jump after first click issue
+}
+  </script>
+ </body>
+</html>
